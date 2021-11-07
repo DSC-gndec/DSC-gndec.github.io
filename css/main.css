@@ -194,7 +194,7 @@ body {
     transform: rotate(45deg) translate(-4.5px, -4.5px);
   }
   .right-content {
-    z-index: 99;
+    z-index: 3;
     text-align: right;
     position: absolute;
     right: 12px;
@@ -323,6 +323,7 @@ body {
             justify-content: center;
   }
   .right-content li a {
+    z-index: 10;
     outline: none;
     text-decoration: none;
     color: black;
@@ -915,7 +916,7 @@ p {
 
 .back-to-top {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .btn-dark.hide {
@@ -937,7 +938,7 @@ p {
   background: #2e2e2e;
   border-color: #2e2e2e;
   display: none;
-  z-index: 999;
+  z-index: 3;
   -webkit-transition: all 0.1s linear, font-size 0.15s ease-in-out;
   transition: all 0.1s linear, font-size 0.15s ease-in-out;
   font-size: 18px;
