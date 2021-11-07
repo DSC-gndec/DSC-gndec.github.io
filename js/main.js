@@ -58,5 +58,29 @@ scrollToTopButton.onclick = function (e) {
 
 
 
+function snackbar(Notification) {var x = document.getElementById("snackbar");x.innerHTML=Notification;x.className = "show";setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);}
+
+var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        snackbar("Thanks for subscribing!");
+        form.reset()
+      }).catch(error => {
+        snackbar("Oops! Facing some issues , try again later");
+      });
+    }
+    form.addEventListener("submit", handleSubmit);
+
+
 
 // document.getElementById("").style.display

@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <div id="snackbar"></div>
     <header>
         <div class="nav">
             <div class="left-content">
@@ -169,11 +170,11 @@
                                     <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
                                     Subscribe us to get further updates
                                 </p>
-                                <form action="#">
+                                <form id="my-form" action="https://formspree.io/f/xoqyorwy" method="POST">
                                     <div class="form-row">
                                         <div class="col dk-footer-form">
-                                            <input type="email" class="form-control f-subscribe" placeholder="Email Address">
-                                            <button type="submit">
+                                            <input type="email" name="email" class="form-control f-subscribe" placeholder="Email Address">
+                                            <button type="submit" id="my-form-button">
                                                 <i class="fa fa-send"></i>
                                             </button>
                                         </div>
