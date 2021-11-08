@@ -377,8 +377,11 @@ body {
 
     /* =========================== /Start-Encourage-Block/ ========================== */
 
-    .cards-container{
+    .encourage{
       background-color: #f8f8f8;
+    }
+
+    .cards-container{
       display: flex;
       padding: 35px 4px;
       justify-content: space-evenly;
@@ -558,18 +561,21 @@ body {
     
     /* =========================== /Start-Encourage-Block/ ========================== */
 
+
+
     .cards-container{
-      background-color: #f8f8f8;
       display: flex;
-      padding: 35px 4px;
+      padding: 55px 4px;
       justify-content: space-evenly;
       flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto;
     }
 
     .card{
       max-width: 300px;
       margin: 12px;
-      padding: 10px;
+      padding: 22px 15px;
       display: inline-flex;
       border-radius: 12px;
       cursor: pointer;
@@ -590,6 +596,10 @@ body {
       text-align: center;
       // font-weight: bold;
       color: #000000;
+    }
+    
+    .card-body{
+      padding: 5px;
     }
 
   /* =========================== /End-Encourage-Block/ ========================== */

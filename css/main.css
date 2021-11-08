@@ -413,8 +413,10 @@ body {
   }
   /* =========================== /End-Banner/ ========================== */
   /* =========================== /Start-Encourage-Block/ ========================== */
-  .cards-container {
+  .encourage {
     background-color: #f8f8f8;
+  }
+  .cards-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -596,21 +598,22 @@ body {
   /* =========================== /End-Banner/ ========================== */
   /* =========================== /Start-Encourage-Block/ ========================== */
   .cards-container {
-    background-color: #f8f8f8;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 35px 4px;
+    padding: 55px 4px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
   }
   .card {
     max-width: 300px;
     margin: 12px;
-    padding: 10px;
+    padding: 22px 15px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -634,6 +637,9 @@ body {
     font-size: 18px;
     text-align: center;
     color: #000000;
+  }
+  .card-body {
+    padding: 5px;
   }
   /* =========================== /End-Encourage-Block/ ========================== */
 }
