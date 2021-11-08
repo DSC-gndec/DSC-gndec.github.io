@@ -113,6 +113,8 @@ body {
 @media screen and (min-width: 100px) {
   /* =========================== Header ========================== */
   .nav {
+    position: relative;
+    z-index: 10;
     -ms-flex-line-pack: center;
         align-content: center;
     -webkit-box-align: center;
@@ -376,6 +378,82 @@ body {
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   /* =========================== /End-Header/ ========================== */
+  /* =========================== /Start-Banner/ ========================== */
+  .banner {
+    background-image: url("../images/banner.jpg");
+    width: 100%;
+    height: 92vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -5px;
+  }
+  .banner .overlay {
+    background-color: rgba(0, 0, 0, 0.432);
+    height: 100%;
+    width: 100%;
+  }
+  .banner .content {
+    position: absolute;
+    top: 37%;
+    z-index: 12;
+    padding: 0 30px;
+    width: 90%;
+  }
+  .banner .main-heading {
+    color: #fce6eafc;
+    font-size: 25px;
+    font-family: Merriweather;
+    font-weight: bold;
+  }
+  .banner .sub-heading p {
+    margin-top: 8px;
+    font-size: 15px;
+    font-family: Raleway;
+  }
+  /* =========================== /End-Banner/ ========================== */
+  /* =========================== /Start-Encourage-Block/ ========================== */
+  .cards-container {
+    background-color: #f8f8f8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 4px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card {
+    max-width: 300px;
+    margin: 12px;
+    padding: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border-radius: 12px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
+    -webkit-transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
+    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+  }
+  .card:hover {
+    -webkit-transform: scale(1.045);
+            transform: scale(1.045);
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
+  }
+  .card-title {
+    font-family: Merriweather;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+  }
+  /* =========================== /End-Encourage-Block/ ========================== */
 }
 
 @media screen and (min-width: 710px) {
@@ -500,6 +578,64 @@ body {
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   /* =========================== /End-Header/ ========================== */
+  /* =========================== /Start-Banner/ ========================== */
+  .banner .overlay {
+    background-color: rgba(0, 0, 0, 0.377);
+  }
+  .banner .content {
+    top: 40%;
+    width: 50%;
+  }
+  .banner .main-heading {
+    font-size: 35px;
+  }
+  .banner .sub-heading p {
+    margin-top: 7px;
+    font-size: 17px;
+  }
+  /* =========================== /End-Banner/ ========================== */
+  /* =========================== /Start-Encourage-Block/ ========================== */
+  .cards-container {
+    background-color: #f8f8f8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 4px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card {
+    max-width: 300px;
+    margin: 12px;
+    padding: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border-radius: 12px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
+    -webkit-transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
+    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+  }
+  .card:hover {
+    -webkit-transform: scale(1.045);
+            transform: scale(1.045);
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
+  }
+  .card-title {
+    font-family: Merriweather;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+  }
+  /* =========================== /End-Encourage-Block/ ========================== */
 }
 
 /* =========================== Footer ========================== */
@@ -791,7 +927,7 @@ p {
 }
 
 .footer-widget a:hover {
-  color: #ec617dfc;
+  color: #fbacbcfc;
 }
 
 .footer-widget:after {
