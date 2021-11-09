@@ -463,8 +463,8 @@ body {
     font-weight: bold;
     color: #000000;
     margin: 0 auto;
-    margin-top: 55px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 65px;
     text-align: center;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -511,53 +511,37 @@ body {
   }
   /* =========================== /End-section-heading/ ========================== */
   /* =========================== /Start-Events-Block/ ========================== */
-  .event-section {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .event-section .event-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: justify;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-  .event-card {
-    position: relative;
-    width: 350px;
+  .event-section .event-row img {
+    width: 270px;
     height: 200px;
-    border-radius: 15px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin: 10px;
-    border: 1px solid #00000048;
+    border-radius: 8px;
+    margin-bottom: 8px;
   }
-  .image {
-    display: block;
-    width: 350px;
-    height: 200px;
+  .event-section .event-row .event-row-right {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
-  .event-card-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
-    background-color: #00000034;
-    border-radius: 15px;
-  }
-  .event-card:hover .event-card-overlay {
-    opacity: 1;
-  }
-  .event-card-overlay .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  .event-section .event-row .event-title {
+    font-size: 18px;
     text-align: center;
+    font-family: Merriweather;
+    font-weight: bold;
+  }
+  .event-section .event-row p {
+    font-size: 15px;
+    padding: 10px 10px 10px 5px;
+    color: #000000;
   }
   /* =========================== /End-Events-Block/ ========================== */
 }
@@ -746,6 +730,43 @@ body {
     padding: 5px;
   }
   /* =========================== /End-Encourage-Block/ ========================== */
+  /* =========================== /Start-Events-Block/ ========================== */
+  .event-section {
+    padding: 90px;
+  }
+  .event-section .event-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: justify;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .event-section .event-row img {
+    width: 320px;
+    height: 210px;
+    margin-bottom: 0px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.425);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.425);
+  }
+  .event-section .event-row .event-title {
+    font-size: 20px;
+    font-family: Merriweather;
+    font-weight: bold;
+  }
+  .event-section .event-row .event-row-right {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .event-section .event-row p {
+    padding: 10px 35px 10px 5px;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+  /* =========================== /End-Events-Block/ ========================== */
 }
 
 /* =========================== Footer ========================== */
