@@ -373,7 +373,45 @@ body {
 
     /* =========================== /End-Banner/ ========================== */
 
-
+    
+  /* =========================== /Start-Overview-Block/ ========================== */
+  .overview-section {
+    padding: 90px;
+  }
+  .overview-section .event-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: justify;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .overview-section .event-row img {
+    width: 450px;
+    height: 210px;
+    // margin-bottom: 0px;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+  }
+  .overview-section .event-row .event-title {
+    margin-top: 0px;
+    font-size: 20px;
+    font-family: Merriweather;
+    font-weight: bold;
+  }
+  .overview-section .event-row .event-row-left {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .overview-section .event-row p {
+    padding: 10px 35px 10px 35px;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+  /* =========================== /End-Overview-Block/ ========================== */
 
     /* =========================== /Start-Encourage-Block/ ========================== */
 
@@ -587,9 +625,12 @@ body {
   }
 
   .custom-button {
-    background-color: $themeColor;
+    // background-color: $themeColor;
+    background-color: rgb(214, 238, 239);
+
     border-radius: 100px;
-    box-shadow: rgba(251, 172, 188, .35) 0 -25px 18px -14px inset,rgba(251, 172, 188, 0.25) 0 1px 2px,rgba(251, 172, 188, .25) 0 2px 4px,rgba(251, 172, 188, .25) 0 4px 8px,rgba(251, 172, 188, .25) 0 8px 16px,rgba(251, 172, 188, .25) 0 16px 32px;
+    // box-shadow: rgba(251, 172, 188, .35) 0 -25px 18px -14px inset,rgba(251, 172, 188, 0.25) 0 1px 2px,rgba(251, 172, 188, .25) 0 2px 4px,rgba(251, 172, 188, .25) 0 4px 8px,rgba(251, 172, 188, .25) 0 8px 16px,rgba(251, 172, 188, .25) 0 16px 32px;
+    box-shadow: rgba(214, 238, 239, .35) 0 -25px 18px -14px inset,rgba(214, 238, 239, 0.25) 0 1px 2px,rgba(214, 238, 239, .25) 0 2px 4px,rgba(214, 238, 239, .25) 0 4px 8px,rgba(214, 238, 239, .25) 0 8px 16px,rgba(214, 238, 239, .25) 0 16px 32px;
     color: #ce2648fc;
     cursor: pointer;
     display: inline-block;
@@ -606,7 +647,8 @@ body {
   }
 
   .custom-button:hover {
-    box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset,rgba(251, 172, 188,.35) 0 1px 2px,rgba(251, 172, 188,.35) 0 2px 4px,rgba(251, 172, 188,.35) 0 4px 8px,rgba(251, 172, 188,.35) 0 8px 16px,rgba(251, 172, 188,.35) 0 16px 32px;
+    // box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset,rgba(251, 172, 188,.35) 0 1px 2px,rgba(251, 172, 188,.35) 0 2px 4px,rgba(251, 172, 188,.35) 0 4px 8px,rgba(251, 172, 188,.35) 0 8px 16px,rgba(251, 172, 188,.35) 0 16px 32px;
+    box-shadow: rgba(214, 238, 239, 0.55) 0 -25px 18px -14px inset,rgba(214, 238, 239,.35) 0 1px 2px,rgba(214, 238, 239,.35) 0 2px 4px,rgba(2214, 238, 239,.35) 0 4px 8px,rgba(214, 238, 239,.35) 0 8px 16px,rgba(214, 238, 239,.35) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
   }
 
@@ -753,6 +795,41 @@ body {
     /* =========================== /End-Banner/ ========================== */
 
 
+    /* =========================== /Start-Event-Page-Banner/ ========================== */
+  .event-page-banner {
+    background-image: url("../images/EBanner.jpg");
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -5px;
+  }
+  .event-page-banner .overlay {
+    background-color: rgba(22, 18, 18, 0.432);
+    height: 100%;
+    width: 100%;
+  }
+  .event-page-banner .content {
+    position: absolute;
+    top: 37%;
+    z-index: 12;
+    padding: 0 30;
+    width: 80%;
+    margin-left: 50px;
+  }
+  .event-page-banner .main-heading {
+    color: #fce6eafc;
+    font-size: 40px;
+    font-family: Merriweather;
+    font-weight: bold;
+  }
+  .event-page-banner .sub-heading p {
+    margin-top: 8px;
+    font-size: 15px;
+    font-family: Raleway;
+  }
+  /* =========================== /End--Event-Page-Banner/ ========================== */
 
     
     /* =========================== /Start-Encourage-Block/ ========================== */
