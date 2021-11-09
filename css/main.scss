@@ -548,6 +548,7 @@ body {
     height: 200px;
     border-radius: 8px;
     margin-bottom: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.425);
   }
 
   .event-section .event-row .event-row-right{
@@ -559,6 +560,7 @@ body {
     text-align: center;
     font-family: Merriweather;
     font-weight: bold;
+    margin-top: 6px;
   }
 
   .event-section .event-row p{
@@ -777,6 +779,7 @@ body {
   }
 
   .event-section .event-row .event-title{
+    margin-top: 0px;
     font-size: 20px;
     font-family: Merriweather;
     font-weight: bold;
