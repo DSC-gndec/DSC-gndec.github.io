@@ -375,41 +375,40 @@ body {
 
     
   /* =========================== /Start-Overview-Block/ ========================== */
-  .overview-section {
-    padding: 90px;
+  .overview-section{
+    // padding: 20px;
   }
-  .overview-section .event-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
+  .overview-section .event-row{
     display: flex;
     text-align: justify;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: column-reverse;
   }
-  .overview-section .event-row img {
-    width: 450px;
-    height: 210px;
-    // margin-bottom: 0px;
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
-            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+
+  .overview-section .event-row img{
+    width: 270px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
   }
-  .overview-section .event-row .event-title {
-    margin-top: 0px;
-    font-size: 20px;
+
+  .overview-section .event-row .event-row-right{
+    align-self: center;
+  }
+
+  .overview-section .event-row .event-title{
+    font-size: 18px;
+    text-align: center;
     font-family: Merriweather;
     font-weight: bold;
+    margin-top: 6px;
   }
-  .overview-section .event-row .event-row-left {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-  .overview-section .event-row p {
-    padding: 10px 35px 10px 35px;
+
+  .overview-section .event-row p{
+    font-size: 15px;
+    padding: 10px 10px 10px 5px;
     color: #000000;
-    font-size: 16px;
-    letter-spacing: 0.8px;
   }
   /* =========================== /End-Overview-Block/ ========================== */
 
