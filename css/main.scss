@@ -408,11 +408,19 @@ body {
 
     .card-title{
       font-family: Merriweather;
-      font-size: 18px;
+      font-size: 16.5px;
       text-align: center;
       // font-weight: bold;
       color: #000000;
     }
+
+    .card-body{
+      text-align: justify;
+      font-size: 14.5px;
+      padding: 0 15px 10px 15px;
+      font-family: 'Nunito', sans-serif;
+    }
+    
 
   /* =========================== /End-Encourage-Block/ ========================== */
 
@@ -548,7 +556,7 @@ body {
     height: 200px;
     border-radius: 8px;
     margin-bottom: 8px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.425);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
   }
 
   .event-section .event-row .event-row-right{
@@ -570,6 +578,39 @@ body {
   }
 
   /* =========================== /End-Events-Block/ ========================== */
+
+  /* =========================== /Start-custom-button/ ========================== */
+
+  .btn-cont{
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .custom-button {
+    background-color: $themeColor;
+    border-radius: 100px;
+    box-shadow: rgba(251, 172, 188, .35) 0 -25px 18px -14px inset,rgba(251, 172, 188, 0.25) 0 1px 2px,rgba(251, 172, 188, .25) 0 2px 4px,rgba(251, 172, 188, .25) 0 4px 8px,rgba(251, 172, 188, .25) 0 8px 16px,rgba(251, 172, 188, .25) 0 16px 32px;
+    color: #ce2648fc;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 6px 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 14.5px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .custom-button:hover {
+    box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset,rgba(251, 172, 188,.35) 0 1px 2px,rgba(251, 172, 188,.35) 0 2px 4px,rgba(251, 172, 188,.35) 0 4px 8px,rgba(251, 172, 188,.35) 0 8px 16px,rgba(251, 172, 188,.35) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+  /* =========================== /End-custom-button/ ========================== */
 
 }
 
@@ -775,7 +816,7 @@ body {
     width: 320px;
     height: 210px;
     margin-bottom: 0px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.425);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
   }
 
   .event-section .event-row .event-title{
@@ -796,7 +837,17 @@ body {
     letter-spacing: 0.8px;
   }
 
+
   /* =========================== /End-Events-Block/ ========================== */
+
+  /* =========================== /Start-custom-button/ ========================== */
+
+  .custom-button {
+    padding: 7px 20px;
+    font-size: 16px;
+  }
+
+  /* =========================== /End-custom-button/ ========================== */
 
 }
 
