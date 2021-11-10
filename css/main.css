@@ -414,39 +414,46 @@ body {
   /* =========================== /End-Banner/ ========================== */
   /* =========================== /Start-Overview-Block/ ========================== */
   .overview-section {
-    padding: 90px;
+    margin: 40px 0px;
   }
-  .overview-section .event-row {
+  .overview-section .overview-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-align: justify;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .overview-section .event-row img {
-    width: 450px;
-    height: 210px;
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+  .overview-section .overview-row img {
+    width: 270px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 8px;
   }
-  .overview-section .event-row .event-title {
-    margin-top: 0px;
-    font-size: 20px;
+  .overview-section .overview-row .overview-row-left {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .overview-section .overview-row .overview-row-right {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .overview-section .overview-row .overview-title {
+    font-size: 18px;
+    text-align: center;
     font-family: Merriweather;
     font-weight: bold;
+    margin-top: 6px;
   }
-  .overview-section .event-row .event-row-left {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-  }
-  .overview-section .event-row p {
-    padding: 10px 35px 10px 35px;
-    color: #000000;
+  .overview-section .overview-row p {
     font-size: 16px;
-    letter-spacing: 0.8px;
+    padding: 10px 10px 10px 16px;
+    letter-spacing: 0.7px;
+    color: #000000;
   }
   /* =========================== /End-Overview-Block/ ========================== */
   /* =========================== /Start-Encourage-Block/ ========================== */
@@ -475,10 +482,10 @@ body {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
-    -webkit-transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
-    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    -webkit-transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
+    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
   }
   .card:hover {
     -webkit-transform: scale(1.045);
@@ -507,7 +514,7 @@ body {
     color: #000000;
     margin: 0 auto;
     margin-top: 25px;
-    margin-bottom: 65px;
+    margin-bottom: 25px;
     text-align: center;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -564,13 +571,29 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .event-section .event-row .event-status {
+    width: 270px;
+    border-radius: 8px 8px 0 0;
+    padding: 6px 0px;
+    font-size: 17px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f88199;
+    border-bottom: 2px solid #505050;
+  }
+  .event-section .event-row .event-img-cont {
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+    margin-bottom: 8px;
+  }
   .event-section .event-row img {
     width: 270px;
     height: 200px;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
-            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+    border-radius: 0 0 8px 8px;
   }
   .event-section .event-row .event-row-right {
     -ms-flex-item-align: center;
@@ -596,10 +619,10 @@ body {
     text-align: center;
   }
   .custom-button {
-    background-color: #d6eeef;
+    background-color: #fbacbcfc;
     border-radius: 100px;
-    -webkit-box-shadow: rgba(214, 238, 239, 0.35) 0 -25px 18px -14px inset, rgba(214, 238, 239, 0.25) 0 1px 2px, rgba(214, 238, 239, 0.25) 0 2px 4px, rgba(214, 238, 239, 0.25) 0 4px 8px, rgba(214, 238, 239, 0.25) 0 8px 16px, rgba(214, 238, 239, 0.25) 0 16px 32px;
-            box-shadow: rgba(214, 238, 239, 0.35) 0 -25px 18px -14px inset, rgba(214, 238, 239, 0.25) 0 1px 2px, rgba(214, 238, 239, 0.25) 0 2px 4px, rgba(214, 238, 239, 0.25) 0 4px 8px, rgba(214, 238, 239, 0.25) 0 8px 16px, rgba(214, 238, 239, 0.25) 0 16px 32px;
+    -webkit-box-shadow: rgba(251, 172, 188, 0.35) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.25) 0 1px 2px, rgba(251, 172, 188, 0.25) 0 2px 4px, rgba(251, 172, 188, 0.25) 0 4px 8px, rgba(251, 172, 188, 0.25) 0 8px 16px, rgba(251, 172, 188, 0.25) 0 16px 32px;
+            box-shadow: rgba(251, 172, 188, 0.35) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.25) 0 1px 2px, rgba(251, 172, 188, 0.25) 0 2px 4px, rgba(251, 172, 188, 0.25) 0 4px 8px, rgba(251, 172, 188, 0.25) 0 8px 16px, rgba(251, 172, 188, 0.25) 0 16px 32px;
     color: #ce2648fc;
     cursor: pointer;
     display: inline-block;
@@ -619,8 +642,8 @@ body {
         touch-action: manipulation;
   }
   .custom-button:hover {
-    -webkit-box-shadow: rgba(214, 238, 239, 0.55) 0 -25px 18px -14px inset, rgba(214, 238, 239, 0.35) 0 1px 2px, rgba(214, 238, 239, 0.35) 0 2px 4px, rgba(255, 238, 239, 0.35) 0 4px 8px, rgba(214, 238, 239, 0.35) 0 8px 16px, rgba(214, 238, 239, 0.35) 0 16px 32px;
-            box-shadow: rgba(214, 238, 239, 0.55) 0 -25px 18px -14px inset, rgba(214, 238, 239, 0.35) 0 1px 2px, rgba(214, 238, 239, 0.35) 0 2px 4px, rgba(255, 238, 239, 0.35) 0 4px 8px, rgba(214, 238, 239, 0.35) 0 8px 16px, rgba(214, 238, 239, 0.35) 0 16px 32px;
+    -webkit-box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.35) 0 1px 2px, rgba(251, 172, 188, 0.35) 0 2px 4px, rgba(251, 172, 188, 0.35) 0 4px 8px, rgba(251, 172, 188, 0.35) 0 8px 16px, rgba(251, 172, 188, 0.35) 0 16px 32px;
+            box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.35) 0 1px 2px, rgba(251, 172, 188, 0.35) 0 2px 4px, rgba(251, 172, 188, 0.35) 0 4px 8px, rgba(251, 172, 188, 0.35) 0 8px 16px, rgba(251, 172, 188, 0.35) 0 16px 32px;
     -webkit-transform: scale(1.05) rotate(-1deg);
             transform: scale(1.05) rotate(-1deg);
   }
@@ -765,6 +788,45 @@ body {
     font-size: 17px;
   }
   /* =========================== /End-Banner/ ========================== */
+  /* =========================== /Start-Overview-Block/ ========================== */
+  .overview-section {
+    margin: 40px 0px;
+  }
+  .overview-section .overview-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: justify;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .overview-section .overview-row img {
+    width: 340px;
+    height: 230px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  .overview-section .overview-row .overview-row-right {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .overview-section .overview-row .overview-title {
+    font-size: 18px;
+    text-align: center;
+    font-family: Merriweather;
+    font-weight: bold;
+    margin-top: 6px;
+  }
+  .overview-section .overview-row p {
+    font-size: 16px;
+    padding: 10px 10px 10px 16px;
+    letter-spacing: 0.7px;
+    color: #000000;
+  }
+  /* =========================== /End-Overview-Block/ ========================== */
   /* =========================== /Start-Event-Page-Banner/ ========================== */
   .event-page-banner {
     background-image: url("../images/EBanner.jpg");
@@ -825,10 +887,10 @@ body {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
-    -webkit-transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
-    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    -webkit-transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
+    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
   }
   .card:hover {
     -webkit-transform: scale(1.045);
@@ -854,34 +916,52 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 70px 0 50px 0;
     text-align: justify;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .event-section .event-row .event-status {
+    width: 320px;
+    border-radius: 8px 8px 0 0;
+    padding: 6px 0px;
+    font-size: 17px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f88199;
+  }
+  .event-section .event-row .event-img-cont {
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.479);
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.479);
+  }
   .event-section .event-row img {
     width: 320px;
     height: 210px;
     margin-bottom: 0px;
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
-            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+    border-radius: 0 0 8px 8px;
   }
   .event-section .event-row .event-title {
     margin-top: 0px;
     font-size: 20px;
     font-family: Merriweather;
     font-weight: bold;
+    padding: 0px 35px 0px 5px;
   }
   .event-section .event-row .event-row-right {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .event-section .event-row p {
     padding: 10px 35px 10px 5px;
     color: #000000;
     font-size: 16px;
-    letter-spacing: 0.8px;
   }
   /* =========================== /End-Events-Block/ ========================== */
   /* =========================== /Start-custom-button/ ========================== */

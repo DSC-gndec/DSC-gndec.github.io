@@ -374,30 +374,36 @@ body {
     /* =========================== /End-Banner/ ========================== */
 
     
+  
   /* =========================== /Start-Overview-Block/ ========================== */
+
   .overview-section{
     // padding: 20px;
+    margin: 40px 0px;
   }
 
-  .overview-section .event-row{
+  .overview-section .overview-row{
     display: flex;
     text-align: justify;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
-  .overview-section .event-row img{
+  .overview-section .overview-row img{
     width: 270px;
     height: 200px;
     border-radius: 8px;
     margin-bottom: 8px;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
   }
 
-  .overview-section .event-row .event-row-right{
+  .overview-section .overview-row .overview-row-left{
     align-self: center;
   }
 
-  .overview-section .event-row .event-title{
+  .overview-section .overview-row .overview-row-right{
+    align-self: center;
+  }
+
+  .overview-section .overview-row .overview-title{
     font-size: 18px;
     text-align: center;
     font-family: Merriweather;
@@ -405,58 +411,59 @@ body {
     margin-top: 6px;
   }
 
-  .overview-section .event-row p{
-    font-size: 15px;
-    padding: 10px 10px 10px 5px;
+  .overview-section .overview-row p{
+    font-size: 16px;
+    padding: 10px 10px 10px 16px;
+    letter-spacing: 0.7px;
     color: #000000;
   }
   /* =========================== /End-Overview-Block/ ========================== */
 
-    /* =========================== /Start-Encourage-Block/ ========================== */
+  /* =========================== /Start-Encourage-Block/ ========================== */
 
-    .encourage{
-      background-color: #f8f8f8;
-    }
+  .encourage{
+    background-color: #f8f8f8;
+  }
 
-    .cards-container{
-      display: flex;
-      padding: 35px 4px;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-    }
+  .cards-container{
+    display: flex;
+    padding: 35px 4px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 
-    .card{
-      max-width: 300px;
-      margin: 12px;
-      padding: 10px;
-      display: inline-flex;
-      border-radius: 12px;
-      cursor: pointer;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
-      transition: cardbox-shadow 0.22s ease-in-out,
-                  transform 0.22s ease-in-out;
-    }
+  .card{
+    max-width: 300px;
+    margin: 12px;
+    padding: 10px;
+    display: inline-flex;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
+    transition: cardbox-shadow 0.22s ease-in-out,
+                transform 0.22s ease-in-out;
+  }
 
-    .card:hover{
-      transform: scale(1.045);
-      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
-      // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.39);
-    }
+  .card:hover{
+    transform: scale(1.045);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
+    // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.39);
+  }
 
-    .card-title{
-      font-family: Merriweather;
-      font-size: 16.5px;
-      text-align: center;
-      // font-weight: bold;
-      color: #000000;
-    }
+  .card-title{
+    font-family: Merriweather;
+    font-size: 16.5px;
+    text-align: center;
+    // font-weight: bold;
+    color: #000000;
+  }
 
-    .card-body{
-      text-align: justify;
-      font-size: 14.5px;
-      padding: 0 15px 10px 15px;
-      font-family: 'Nunito', sans-serif;
-    }
+  .card-body{
+    text-align: justify;
+    font-size: 14.5px;
+    padding: 0 15px 10px 15px;
+    font-family: 'Nunito', sans-serif;
+  }
     
 
   /* =========================== /End-Encourage-Block/ ========================== */
@@ -471,7 +478,7 @@ body {
     color: #000000;
     margin: 0 auto;
     margin-top: 25px;
-    margin-bottom: 65px;
+    margin-bottom: 25px;
     text-align: center;
     width: fit-content;
   }
@@ -588,12 +595,33 @@ body {
     flex-direction: column-reverse;
   }
 
+  .event-section .event-row .event-status{
+    width: 270px;
+    // height: 40px;
+    border-radius: 8px 8px 0 0;
+    padding: 6px 0px;
+    font-size: 17px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    // margin-bottom: 8px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    // background-color: #fc6c89;
+    background-color: #f88199;
+    border-bottom: 2px solid #505050;
+  }
+
+  .event-section .event-row .event-img-cont{
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+    margin-bottom: 8px;
+  }
+
   .event-section .event-row img{
     width: 270px;
     height: 200px;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+    border-radius: 0 0 8px 8px;
   }
 
   .event-section .event-row .event-row-right{
@@ -624,12 +652,9 @@ body {
   }
 
   .custom-button {
-    // background-color: $themeColor;
-    background-color: rgb(214, 238, 239);
-
+    background-color: $themeColor;
     border-radius: 100px;
-    // box-shadow: rgba(251, 172, 188, .35) 0 -25px 18px -14px inset,rgba(251, 172, 188, 0.25) 0 1px 2px,rgba(251, 172, 188, .25) 0 2px 4px,rgba(251, 172, 188, .25) 0 4px 8px,rgba(251, 172, 188, .25) 0 8px 16px,rgba(251, 172, 188, .25) 0 16px 32px;
-    box-shadow: rgba(214, 238, 239, .35) 0 -25px 18px -14px inset,rgba(214, 238, 239, 0.25) 0 1px 2px,rgba(214, 238, 239, .25) 0 2px 4px,rgba(214, 238, 239, .25) 0 4px 8px,rgba(214, 238, 239, .25) 0 8px 16px,rgba(214, 238, 239, .25) 0 16px 32px;
+    box-shadow: rgba(251, 172, 188, .35) 0 -25px 18px -14px inset,rgba(251, 172, 188, 0.25) 0 1px 2px,rgba(251, 172, 188, .25) 0 2px 4px,rgba(251, 172, 188, .25) 0 4px 8px,rgba(251, 172, 188, .25) 0 8px 16px,rgba(251, 172, 188, .25) 0 16px 32px;
     color: #ce2648fc;
     cursor: pointer;
     display: inline-block;
@@ -646,10 +671,10 @@ body {
   }
 
   .custom-button:hover {
-    // box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset,rgba(251, 172, 188,.35) 0 1px 2px,rgba(251, 172, 188,.35) 0 2px 4px,rgba(251, 172, 188,.35) 0 4px 8px,rgba(251, 172, 188,.35) 0 8px 16px,rgba(251, 172, 188,.35) 0 16px 32px;
-    box-shadow: rgba(214, 238, 239, 0.55) 0 -25px 18px -14px inset,rgba(214, 238, 239,.35) 0 1px 2px,rgba(214, 238, 239,.35) 0 2px 4px,rgba(2214, 238, 239,.35) 0 4px 8px,rgba(214, 238, 239,.35) 0 8px 16px,rgba(214, 238, 239,.35) 0 16px 32px;
+    box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset,rgba(251, 172, 188,.35) 0 1px 2px,rgba(251, 172, 188,.35) 0 2px 4px,rgba(251, 172, 188,.35) 0 4px 8px,rgba(251, 172, 188,.35) 0 8px 16px,rgba(251, 172, 188,.35) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
   }
+
 
   /* =========================== /End-custom-button/ ========================== */
 
@@ -791,7 +816,47 @@ body {
     font-size: 17px;
   }
 
-    /* =========================== /End-Banner/ ========================== */
+  /* =========================== /End-Banner/ ========================== */
+
+  /* =========================== /Start-Overview-Block/ ========================== */
+
+  .overview-section{
+    // padding: 20px;
+    margin: 40px 0px;
+  }
+
+  .overview-section .overview-row{
+    display: flex;
+    text-align: justify;
+    flex-direction: row;
+  }
+
+  .overview-section .overview-row img{
+    width: 340px;
+    height: 230px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .overview-section .overview-row .overview-row-right{
+    align-self: center;
+  }
+
+  .overview-section .overview-row .overview-title{
+    font-size: 18px;
+    text-align: center;
+    font-family: Merriweather;
+    font-weight: bold;
+    margin-top: 6px;
+  }
+
+  .overview-section .overview-row p{
+    font-size: 16px;
+    padding: 10px 10px 10px 16px;
+    letter-spacing: 0.7px;
+    color: #000000;
+  }
+  /* =========================== /End-Overview-Block/ ========================== */
 
 
     /* =========================== /Start-Event-Page-Banner/ ========================== */
@@ -831,48 +896,48 @@ body {
   /* =========================== /End--Event-Page-Banner/ ========================== */
 
     
-    /* =========================== /Start-Encourage-Block/ ========================== */
+  /* =========================== /Start-Encourage-Block/ ========================== */
 
 
 
-    .cards-container{
-      display: flex;
-      padding: 55px 4px;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      width: 100%;
-      margin: 0 auto;
-    }
+  .cards-container{
+    display: flex;
+    padding: 55px 4px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    .card{
-      max-width: 300px;
-      margin: 12px;
-      padding: 22px 15px;
-      display: inline-flex;
-      border-radius: 12px;
-      cursor: pointer;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
-      transition: box-shadow 0.22s ease-in-out,
-                  transform 0.22s ease-in-out;
-    }
+  .card{
+    max-width: 300px;
+    margin: 12px;
+    padding: 22px 15px;
+    display: inline-flex;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
+    transition: box-shadow 0.22s ease-in-out,
+                transform 0.22s ease-in-out;
+  }
 
-    .card:hover{
-      transform: scale(1.045);
-      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
-      // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.39);
-    }
+  .card:hover{
+    transform: scale(1.045);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
+    // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.39);
+  }
 
-    .card-title{
-      font-family: Merriweather;
-      font-size: 18px;
-      text-align: center;
-      // font-weight: bold;
-      color: #000000;
-    }
-    
-    .card-body{
-      padding: 5px;
-    }
+  .card-title{
+    font-family: Merriweather;
+    font-size: 18px;
+    text-align: center;
+    // font-weight: bold;
+    color: #000000;
+  }
+  
+  .card-body{
+    padding: 5px;
+  }
 
   /* =========================== /End-Encourage-Block/ ========================== */
 
@@ -884,15 +949,37 @@ body {
 
   .event-section .event-row{
     display: flex;
+    margin: 70px 0 50px 0;
     text-align: justify;
     flex-direction: row;
+  }
+
+  .event-section .event-row .event-status{
+    width: 320px;
+    // height: 40px;
+    border-radius: 8px 8px 0 0;
+    padding: 6px 0px;
+    font-size: 17px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    // margin-bottom: 8px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    // background-color: #fc6c89;
+    background-color: #f88199;
+  }
+
+  .event-section .event-row .event-img-cont{
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.479);
   }
 
   .event-section .event-row img{
     width: 320px;
     height: 210px;
     margin-bottom: 0px;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+    border-radius: 0 0 8px 8px;
   }
 
   .event-section .event-row .event-title{
@@ -900,17 +987,18 @@ body {
     font-size: 20px;
     font-family: Merriweather;
     font-weight: bold;
+    padding: 0px 35px 0px 5px;
   }
 
   .event-section .event-row .event-row-right{
-    align-self: flex-start;
+    align-self: center;
   }
 
   .event-section .event-row p{
     padding: 10px 35px 10px 5px;
     color: #000000;
     font-size: 16px;
-    letter-spacing: 0.8px;
+    // letter-spacing: 0.7px;
   }
 
 
