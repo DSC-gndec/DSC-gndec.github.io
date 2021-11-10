@@ -482,10 +482,10 @@ body {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
-    -webkit-transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
-    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    -webkit-transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
+    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
   }
   .card:hover {
     -webkit-transform: scale(1.045);
@@ -888,10 +888,10 @@ body {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
-    -webkit-transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
-    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    -webkit-transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
+    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
   }
   .card:hover {
     -webkit-transform: scale(1.045);
