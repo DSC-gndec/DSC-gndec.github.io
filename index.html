@@ -34,9 +34,9 @@
             <div class="right-content" id="nav-links">
                 <ul>
                     <li class="links active"><a href="/">Home</a></li>
-                    <li class="links"><a href="https://datascienceclub-gndec.github.io/Project/a/about.html">About</a></li>
-                    <li class="links"><a href="https://datascienceclub-gndec.github.io/Project/a/events.html">Events</a></li>
-                    <li class="links"><a href="https://datascienceclub-gndec.github.io/Project/a/contact.html">Contact</a></li>
+                    <li class="links"><a href="./a/about.html">About</a></li>
+                    <li class="links"><a href="./a/events.html">Events</a></li>
+                    <li class="links"><a href="./a/contact.html">Contact</a></li>
                 </ul>
             </div>
             <!-- <div class="menu"><div class="menu-button"><i class="fa fa-bars"></i></div></div> -->
@@ -192,13 +192,46 @@
                 <div class="event-row-right">
                     <div class="event-img-cont">
                         <div class="event-status">Past</div>
-                        <img src="./images/Hackoverflow.png" alt="Event" class="image">
+                        <img src="./images/Hackoverflow.png" alt="HACKOVERFLOW" class="image" data-enlarge-available="true">
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-row">
+                <div class="event-row-left">
+                    <div class="event-title">PLAY2WIN</div>
+                        <p>The enemy is just as afraid as you are, maybe even more. They simply got lucky this time, without Passion you are already dead.
+                            Electrify and emuse yourself in the thrilling battle of BATTLEGROUNDS MOBILE INDIA(BGMI) and stand a chance to win exciting prizes.
+                        </p>
+                    </div>
+                <div class="event-row-right">
+                    <div class="event-img-cont">
+                        <div class="event-status">UPCOMING</div>
+                        <img src="./images/PLAY2Win.png" alt="PLAY2WIN" class="image" data-enlarge-available="true">
                     </div>
                 </div>
             </div>
         </div>
         <div class="btn-cont">
             <button class="custom-button" role="button">See More Events</button>    
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ImageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal-title"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <img src="" alt="">
+            </div>
+        </div>
         </div>
     </div>
 
@@ -323,7 +356,7 @@
                                 <form id="my-form" action="https://formspree.io/f/xoqyorwy" method="POST">
                                     <div class="form-row">
                                         <div class="col dk-footer-form">
-                                            <input type="email" name="email" class="form-control f-subscribe" placeholder="Email Address">
+                                            <input type="email" name="email" class="form-control f-subscribe" placeholder="Email Address" required>
                                             <button type="submit" id="my-form-button">
                                                 <i class="fa fa-send"></i>
                                             </button>
@@ -370,7 +403,7 @@
 <script src=".\Bootstrap\js\bootstrap.bundle.js"></script>
 <script src=".\Bootstrap\js\bootstrap.bundle.min.js"></script>
 <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
-<script src="./js/jquery-1.11.1.min.js" async defer></script>
+<script src="./js/jouery-1.11.1.min.js"></script>
 <script type="text/javascript" src="./js/main.js" async defer></script>
 
 </html>

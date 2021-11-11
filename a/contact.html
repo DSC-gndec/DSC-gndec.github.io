@@ -43,10 +43,10 @@
             </div>
             <div class="right-content" id="nav-links">
                 <ul>
-                    <li class="links active"><a href="https://datascienceclub-gndec.github.io/Project/">Home</a></li>
-                    <li class="links"><a href="https://datascienceclub-gndec.github.io/Project/a/about.html">About</a></li>
-                    <li class="links"><a href="https://datascienceclub-gndec.github.io/Project/a/events.html">Events</a></li>
-                    <li class="links"><a href="/">Contact</a></li>
+                    <li class="links"><a href="/">Home</a></li>
+                    <li class="links"><a href="./about.html">About</a></li>
+                    <li class="links"><a href="./events.html">Events</a></li>
+                    <li class="links active"><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
             <!-- <div class="menu"><div class="menu-button"><i class="fa fa-bars"></i></div></div> -->
@@ -61,9 +61,7 @@
         <!-- <img src="./images/banner.jpg"> -->
         <div class="overlay">
             <div class="content">
-                <div class="main-heading">
-                    Contact Us
-                </div>
+                <div class="main-heading">Contact Us</div>
                 <div class="sub-heading">
                     <p>
                         Fill this Contact form with any questions or inquiries. Our support team is always here to get back to you.
@@ -83,13 +81,13 @@
             <img src="../images/contact.png" alt="IMG">
           </div>
   
-          <form class="contact100-form validate-form">
+          <form action="https://formspree.io/f/xnqlenol" id="contact-form" class="contact100-form validate-form" method="POST">
             <span class="contact100-form-title">
               Get in touch
             </span>
   
             <div class="wrap-input100 validate-input" data-validate = "Name is required">
-              <input class="input100" type="text" name="name" placeholder="Name">
+              <input class="input100" type="text" name="name" id="name" placeholder="Name">
               <span class="focus-input100"></span>
               <span class="symbol-input100">
                 <i class="fa fa-user" aria-hidden="true"></i>
@@ -97,7 +95,7 @@
             </div>
   
             <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-              <input class="input100" type="text" name="email" placeholder="Email">
+              <input class="input100" type="email" name="email" id="email" placeholder="Email">
               <span class="focus-input100"></span>
               <span class="symbol-input100">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -105,14 +103,12 @@
             </div>
   
             <div class="wrap-input100 validate-input" data-validate = "Message is required">
-              <textarea class="input100" name="message" placeholder="Message"></textarea>
+              <textarea class="input100" name="message" id="message" placeholder="Message"></textarea>
               <span class="focus-input100"></span>
             </div>
   
             <div class="container-contact100-form-btn">
-              <button class="contact100-form-btn">
-                Send
-              </button>
+              <button class="contact100-form-btn" id="contact-form-button">Send</button>
             </div>
           </form>
         </div>
@@ -243,7 +239,7 @@
                                 <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
                                 Subscribe us to get further updates
                             </p>
-                            <form id="my-form" action="https://formspree.io/f/xoqyorwy" method="POST">
+                            <form id="my-form" action="https://formspree.io/f/xknkdgpb" method="POST">
                                 <div class="form-row">
                                     <div class="col dk-footer-form">
                                         <input type="email" name="email" class="form-control f-subscribe" placeholder="Email Address">
@@ -311,11 +307,11 @@
 
 
   
-    ===============================================================================================-->
-	<script src="../css/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!-- ===============================================================================================-->
+	<!-- <script src="../css/vendor/jquery/jquery-3.2.1.min.js"></script> -->
     <!--===============================================================================================-->
-      <script src="../css/vendor/bootstrap/js/popper.js"></script>
-      <script src="../css/vendor/bootstrap/js/bootstrap.min.js"></script> -->
+      <!-- <script src="../css/vendor/bootstrap/js/popper.js"></script> -->
+      <!-- <script src="../css/vendor/bootstrap/js/bootstrap.min.js"></script>  -->
     <!--===============================================================================================-->
       <script src="../css/vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->

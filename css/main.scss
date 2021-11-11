@@ -55,10 +55,14 @@ body {
   background: rgb(160, 160, 160);
 }
 
+img{
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 #snackbar {
   visibility: hidden;
   min-width: 250px;
-  margin-left: -125px;
   background-color: rgba(51, 51, 51, 0.938);
   color: #fff;
   text-align: center;
@@ -67,6 +71,7 @@ body {
   position: fixed;
   z-index: 999999;
   left: 50%;
+  transform: translateX(-50%);
   bottom: 30px;
   font-family: Raleway;
   font-size: 15px;
@@ -371,9 +376,86 @@ body {
     font-family: Raleway;
   }
 
-    /* =========================== /End-Banner/ ========================== */
+  /* =========================== /End-Banner/ ========================== */
 
-    
+  
+
+  /* =========================== /Start-Event-Page-Banner/ ========================== */
+  
+  .event-page-banner {
+    background-image: url("../images/EBanner.jpg");
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -5px;
+  }
+  .event-page-banner .overlay {
+    background-color: rgba(22, 18, 18, 0.432);
+    height: 100%;
+    width: 100%;
+  }
+  .event-page-banner .content {
+    position: absolute;
+    top: 24%;
+    z-index: 6;
+    padding: 0 30;
+    width: 90%;
+    margin-left: 15px;
+  }
+  .event-page-banner .main-heading {
+    color: #fce6eafc;
+    font-size: 25px;
+    font-family: Merriweather;
+    font-weight: bold;
+  }
+  .event-page-banner .sub-heading p {
+    margin-top: 8px;
+    font-size: 15px;
+    font-family: Raleway;
+  }
+  /* =========================== /End--Event-Page-Banner/ ========================== */
+
+
+  
+  /* =========================== /Start-Contact-Page-Banner/ ========================== */
+  .contact-page-banner {
+    background-image: url("../images/CBanner.jpg");
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -5px;
+  }
+  .contact-page-banner .overlay {
+    background-color: rgba(22, 18, 18, 0.432);
+    height: 100%;
+    width: 100%;
+  }
+  .contact-page-banner .content {
+    position: absolute;
+    top: 25%;
+    z-index: 6;
+    padding: 0 30;
+    width: 90%;
+    margin-left: 15px;
+  }
+  .contact-page-banner .main-heading {
+    color: #fce6eafc;
+    font-size: 25px;
+    font-family: Merriweather;
+    font-weight: bold;
+  }
+  .contact-page-banner .sub-heading p {
+    margin-top: 8px;
+    font-size: 15px;
+    font-family: Raleway;
+  }
+  /* =========================== /End--Contact-Page-Banner/ ========================== */
+
+
   
   /* =========================== /Start-Overview-Block/ ========================== */
 
@@ -597,7 +679,7 @@ body {
   }
 
   .event-section .event-row .event-status{
-    width: 270px;
+    width: 280px;
     // height: 40px;
     border-radius: 8px 8px 0 0;
     padding: 6px 0px;
@@ -620,7 +702,7 @@ body {
   }
 
   .event-section .event-row img{
-    width: 270px;
+    width: 280px;
     height: 200px;
     border-radius: 0 0 8px 8px;
   }
@@ -635,6 +717,7 @@ body {
     font-family: Merriweather;
     font-weight: bold;
     margin-top: 6px;
+    letter-spacing: 1.2px;
   }
 
   .event-section .event-row p{
@@ -676,10 +759,36 @@ body {
     transform: scale(1.05) rotate(-1deg);
   }
 
-
   /* =========================== /End-custom-button/ ========================== */
 
+
+
+  /* =========================== /Start-Modal/ ========================== */
+
+  .modal-body{
+    padding: 9px;
+    & img{
+      border-radius: 8px;
+    }
+  }
+
+  .modal-content{
+    border-radius: 8px;
+  }
+
+  /* =========================== /End-Modal/ ========================== */
+
+
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 710px) {
   /* =========================== Header ========================== */
@@ -860,7 +969,7 @@ body {
   /* =========================== /End-Overview-Block/ ========================== */
 
 
-    /* =========================== /Start-Event-Page-Banner/ ========================== */
+  /* =========================== /Start-Event-Page-Banner/ ========================== */
   
   .event-page-banner {
     background-image: url("../images/EBanner.jpg");
@@ -878,10 +987,10 @@ body {
   }
   .event-page-banner .content {
     position: absolute;
-    top: 27%;
+    top: 26%;
     z-index: 12;
     padding: 0 30;
-    width: 80%;
+    width: 55%;
     margin-left: 50px;
   }
   .event-page-banner .main-heading {
@@ -892,7 +1001,7 @@ body {
   }
   .event-page-banner .sub-heading p {
     margin-top: 8px;
-    font-size: 15px;
+    font-size: 16px;
     font-family: Raleway;
   }
   /* =========================== /End--Event-Page-Banner/ ========================== */
@@ -1015,7 +1124,78 @@ body {
 
   /* =========================== /End-custom-button/ ========================== */
 
+
+  /* =========================== /Start-Contact-Page-Banner/ ========================== */
+  .contact-page-banner {
+    background-image: url("../images/CBanner.jpg");
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -5px;
+
+    & .overlay {
+      background-color: rgba(22, 18, 18, 0.486);
+      height: 100%;
+      width: 100%;
+    }
+
+    & .content {
+      position: absolute;
+      top: 27%;
+      z-index: 6;
+      padding: 0 30;
+      width: 80%;
+      margin-left: 50px;
+    }
+
+    & .main-heading {
+      color: #fce6eafc;
+      font-size: 35px;
+      font-family: Merriweather;
+      font-weight: bold;
+    }
+
+    & .sub-heading p {
+      margin-top: 8px;
+      font-size: 16px;
+      font-family: Raleway;
+    }
+  }
+  /* =========================== /End--Contact-Page-Banner/ ========================== */
+
+
+
+  /* =========================== /Start-Modal/ ========================== */
+
+  .modal-dialog{
+    max-width: 633px;
+    margin: 1.75rem auto;
+  }
+  
+  .modal-body{
+    padding: 15px;
+  }
+
+  /* =========================== /End-Modal/ ========================== */
+
 }
+
+
+
+
+
+
+
+/* =========================== /Start-Modal/ ========================== */
+.modal-body img{
+  max-width: 100%;
+}
+/* =========================== /End-Modal/ ========================== */
+
+
+
 
 /* =========================== Footer ========================== */
 
@@ -1474,7 +1654,7 @@ p {
   .footer-subscribe {
     margin-top: 15px;
     padding-left: 90px;
-    width: 80% !important;
+    width: 80%;
   }
   .dk-footer-form button[type="submit"] {
     padding: 12.5px 20px 10.5px 14px;
@@ -1725,7 +1905,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 12px;
   /* background: rgba(132,106,221,0.9); */
   /* background: #534D7D; */
   background: white;
@@ -1971,6 +2151,7 @@ textarea.input100 {
 }
 
 @media (max-width: 768px) {
+  
   .wrap-contact100 {
     padding: 110px 80px 157px 80px;
     margin: 8%;
@@ -1986,6 +2167,54 @@ textarea.input100 {
 }
 
 @media (max-width: 576px) {
+
+  .f-container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: -webkit-center;
+  }
+
+  .dk-footer .contact-us{
+    padding: 0px;
+    display: inline-flex;
+  }
+
+  .footer-widget ul{
+    width: 100%;
+  }
+
+  #my-form{
+    display: inline-flex;
+  }
+
+  .footer-subscribe{
+    padding: 0px;
+    width: 100%;
+  }
+
+  .footer-left-widget{
+    padding: 0px;
+  }
+
+  input.input100 {
+    height: 45px;
+    border-radius: 25px;
+    padding: 0 30px 0 60px;
+  }
+  
+  input.input100[name="email"] {
+    padding: 0 30px 0 60px;
+  }
+
+  .contact100-form-btn {
+    height: 45px;
+  }
+
+  .contact100-form-title {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  
   .wrap-contact100 {
     padding: 110px 15px 157px 15px;
     margin: 0;
@@ -2062,41 +2291,7 @@ textarea.input100 {
   /* =========================== /End-Contact-Page/ ========================== */
 
 
-    /* =========================== /Start-Contact-Page-Banner/ ========================== */
-    .contact-page-banner {
-      background-image: url("../images/CBanner.jpg");
-      width: 100%;
-      height: 50vh;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-top: -5px;
-    }
-    .contact-page-banner .overlay {
-      background-color: rgba(22, 18, 18, 0.432);
-      height: 100%;
-      width: 100%;
-    }
-    .contact-page-banner .content {
-      position: absolute;
-      top: 27%;
-      z-index: 12;
-      padding: 0 30;
-      width: 80%;
-      margin-left: 50px;
-    }
-    .contact-page-banner .main-heading {
-      color: #fce6eafc;
-      font-size: 40px;
-      font-family: Merriweather;
-      font-weight: bold;
-    }
-    .contact-page-banner .sub-heading p {
-      margin-top: 8px;
-      font-size: 15px;
-      font-family: Raleway;
-    }
-    /* =========================== /End--Contact-Page-Banner/ ========================== */
+  
   
       
 
