@@ -115,45 +115,48 @@ enlargable_elements.forEach(element => {
 
 
 // ========================= /Start-Contact-form/=================================
-var form = document.getElementById("contact-form");
-async function handleContactForm(event) {
-  event.preventDefault();
-  var data = new FormData(event.target);
-  if (data.get("name") == ""){
-    document.querySelector('#name').setAttribute('required', '');
-    snackbar("Please fill your name");
-    return;
-  }
-  if (data.get("email") == ""){
-    document.querySelector('#email').setAttribute('required', '');
-    snackbar("Please fill your email");
-    return;
-  }
-  if (data.get("message") == ""){
-    document.querySelector('#message').setAttribute('required', '');
-    snackbar("Please fill type something in message");
-    return;
-  }
-  else{
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-          'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        snackbar("Thanks for giving your details<br>We will catch you soon.."); 
-        form.reset();
-      } else {
+try{
+  var form2 = document.getElementById("contact-form");
+  async function handleContactForm(event) {
+    event.preventDefault();
+    var data = new FormData(event.target);
+    if (data.get("name") == ""){
+      document.querySelector('#name').setAttribute('required', '');
+      snackbar("Please fill your name");
+      return;
+    }
+    if (data.get("email") == ""){
+      document.querySelector('#email').setAttribute('required', '');
+      snackbar("Please fill your email");
+      return;
+    }
+    if (data.get("message") == ""){
+      document.querySelector('#message').setAttribute('required', '');
+      snackbar("Please fill type something in message");
+      return;
+    }
+    else{
+      fetch(event.target.action, {
+        method: form2.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          snackbar("Thanks for giving your details<br>We will catch you soon.."); 
+          form2.reset();
+        } else {
+          snackbar("Oops! Facing some issues<br>Please try again later");
+        }
+      }).catch(error => {
         snackbar("Oops! Facing some issues<br>Please try again later");
-      }
-    }).catch(error => {
-      snackbar("Oops! Facing some issues<br>Please try again later");
-    });
+      });
+    }
   }
+  form2.addEventListener("submit", handleContactForm);
 }
-form.addEventListener("submit", handleContactForm);
+catch(err){};
 
 // ========================= /End-Contact-form/=================================
 

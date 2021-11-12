@@ -586,6 +586,58 @@ img {
     font-family: 'Nunito', sans-serif;
   }
   /* =========================== /End-Encourage-Block/ ========================== */
+  /* =========================== /Start-Join-us/ ========================== */
+  .join-us {
+    text-align: center;
+    padding: 55px 0 0 0;
+  }
+  .join-us .join-us-body {
+    margin-top: 40px;
+  }
+  .join-us .join-us-body p {
+    padding: 0 15px;
+    color: #000;
+  }
+  .join-us-button {
+    margin: 10px auto;
+    background: -webkit-gradient(linear, left top, right bottom, from(#EF4765), to(#FF9A5A));
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 2rem;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+    transition: -webkit-box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    white-space: nowrap;
+    -webkit-box-shadow: 0 0 0.05rem rgba(0, 0, 0, 0.5), -0.185rem -0.185rem 0.6rem rgba(239, 71, 102, 0.4), 0.185rem 0.185rem 0.6rem rgba(255, 154, 90, 0.4);
+            box-shadow: 0 0 0.05rem rgba(0, 0, 0, 0.5), -0.185rem -0.185rem 0.6rem rgba(239, 71, 102, 0.4), 0.185rem 0.185rem 0.6rem rgba(255, 154, 90, 0.4);
+  }
+  .join-us-button:not([disabled]):focus {
+    -webkit-box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+            box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  .join-us-button:not([disabled]):hover {
+    -webkit-box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+            box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  /* =========================== /End-Join-us/ ========================== */
   /* =========================== /Start-section-heading/ ========================== */
   .main-section-heading {
     font-family: Pacifico;
@@ -1004,6 +1056,57 @@ img {
     padding: 5px;
   }
   /* =========================== /End-Encourage-Block/ ========================== */
+  /* =========================== /Start-Join-us/ ========================== */
+  .join-us {
+    text-align: center;
+    padding: 55px 0 0 0;
+  }
+  .join-us .join-us-body {
+    margin-top: 40px;
+  }
+  .join-us .join-us-body p {
+    color: #000;
+  }
+  .join-us-button {
+    margin: 10px auto;
+    background: -webkit-gradient(linear, left top, right bottom, from(#EF4765), to(#FF9A5A));
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 2rem;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+    transition: -webkit-box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    white-space: nowrap;
+    -webkit-box-shadow: 0 0 0.05rem rgba(0, 0, 0, 0.5), -0.185rem -0.185rem 0.6rem rgba(239, 71, 102, 0.4), 0.185rem 0.185rem 0.6rem rgba(255, 154, 90, 0.4);
+            box-shadow: 0 0 0.05rem rgba(0, 0, 0, 0.5), -0.185rem -0.185rem 0.6rem rgba(239, 71, 102, 0.4), 0.185rem 0.185rem 0.6rem rgba(255, 154, 90, 0.4);
+  }
+  .join-us-button:not([disabled]):focus {
+    -webkit-box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+            box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  .join-us-button:not([disabled]):hover {
+    -webkit-box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+            box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  /* =========================== /End-Join-us/ ========================== */
   /* =========================== /Start-Events-Block/ ========================== */
   .event-section {
     padding: 90px;
@@ -1110,6 +1213,13 @@ img {
     padding: 15px;
   }
   /* =========================== /End-Modal/ ========================== */
+}
+
+.divider {
+  background-color: rgba(0, 0, 0, 0.089);
+  height: 3px;
+  border-radius: 50%;
+  width: 100%;
 }
 
 /* =========================== /Start-Modal/ ========================== */
