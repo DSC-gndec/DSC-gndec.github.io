@@ -130,7 +130,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #fbacbcfc;
+    background-color: rgba(251, 172, 188, 0.988);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -562,10 +562,10 @@ img {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
-    -webkit-transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
-    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    -webkit-transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: cardbox-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
+    transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
   }
   .card:hover {
     -webkit-transform: scale(1.045);
@@ -756,7 +756,7 @@ img {
     text-align: center;
   }
   .custom-button {
-    background-color: #fbacbcfc;
+    background-color: rgba(251, 172, 188, 0.988);
     border-radius: 100px;
     -webkit-box-shadow: rgba(251, 172, 188, 0.35) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.25) 0 1px 2px, rgba(251, 172, 188, 0.25) 0 2px 4px, rgba(251, 172, 188, 0.25) 0 4px 8px, rgba(251, 172, 188, 0.25) 0 8px 16px, rgba(251, 172, 188, 0.25) 0 16px 32px;
             box-shadow: rgba(251, 172, 188, 0.35) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.25) 0 1px 2px, rgba(251, 172, 188, 0.25) 0 2px 4px, rgba(251, 172, 188, 0.25) 0 4px 8px, rgba(251, 172, 188, 0.25) 0 8px 16px, rgba(251, 172, 188, 0.25) 0 16px 32px;
@@ -806,7 +806,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #fbacbcfc;
+    background-color: rgba(251, 172, 188, 0.988);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1035,10 +1035,10 @@ img {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
-    -webkit-transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
-    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
-    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    -webkit-transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
+    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
+    transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
   }
   .card:hover {
     -webkit-transform: scale(1.045);
@@ -1586,7 +1586,7 @@ p {
 }
 
 .footer-widget a:hover {
-  color: #fbacbcfc;
+  color: rgba(251, 172, 188, 0.988);
 }
 
 .footer-widget:after {
@@ -2390,11 +2390,137 @@ textarea.input100 {
 
 /* =========================== /End-Contact-Page/ ========================== */
 /* =========================== /Start-About Us Page/ ========================== */
-.history-body {
-  padding: 3% 10% 3% 10%;
+@media (min-width: 1200px) {
+  .aim {
+    padding: 3% 5% 3% 5%;
+  }
+  .postionholders {
+    padding: 3% 20% 3% 20%;
+  }
+  .goals {
+    padding: 3% 5% 3% 5%;
+  }
+  .goals-body {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .goals-body-picture {
+    width: 40%;
+    height: auto;
+  }
+  .goals-body-picture img {
+    width: 100%;
+    height: auto;
+  }
+  .aim-body {
+    width: 50%;
+  }
+  .aim-body-picture {
+    width: 50%;
+    height: auto;
+  }
+  .aim-body-picture img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.postionholders-body {
-  padding: 3% 20% 3% 20%;
+@media (max-width: 1200px) {
+  .aim-body-picture {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+  .aim-body-picture img {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .aim {
+    padding: 3% 5% 3% 5%;
+  }
 }
+
+@media (max-width: 1130px) {
+  .aim-body-picture {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+  .aim-body-picture img {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .aim {
+    padding: 3% 5% 3% 5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .aim-body-picture {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+  .aim-body-picture img {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .aim {
+    padding: 3% 5% 3% 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aim-body-picture {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+  .aim-body-picture img {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .aim {
+    padding: 3% 5% 3% 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .aim-body-picture {
+    width: 100%;
+    height: auto;
+  }
+  .aim-body-picture img {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .aim {
+    padding: 3% 5% 3% 5%;
+  }
+  .goals-body-picture {
+    width: 100%;
+    height: auto;
+  }
+  .goals-body-picture img {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .goals {
+    padding: 3% 7% 3% 7%;
+  }
+}
+
+/* =========================== /End-About Us Page/ ========================== */
 /*# sourceMappingURL=main.css.map */
