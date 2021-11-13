@@ -147,8 +147,8 @@ img{
     display: inline-flex;
     font-size: 13px;
     font-weight: 500;
-    border-left: 2.3px solid rgb(9, 41, 128);
-    color: rgb(9, 41, 128);
+    border-left: 2.3px solid #58028a;
+    color: #58028a;
     padding: 0px 4px;
     margin-left: 2px;
   }
@@ -288,14 +288,14 @@ img{
     z-index: 15;
     outline: none;
     text-decoration: none;
-    color: black;
+    color: #25003b;
   }
 
   .right-content li a {
     padding: 5px 6px 5px 4px;
     display: inline-block;
     position: relative;
-    color: #000000;
+    color: #25003b;
     border-radius: 100px;
     text-align: center;
     justify-content: center;
@@ -876,8 +876,8 @@ img{
     display: inline-flex;
     font-size: 14px;
     font-weight: 500;
-    border-left: 3px solid rgb(9, 41, 128);
-    color: rgb(9, 41, 128);
+    border-left: 3px solid #58028a;
+    color: #58028a;
     padding: 0px 6px;
     margin-left: 2px;
   }
@@ -914,14 +914,14 @@ img{
   .right-content li a {
     outline: none;
     text-decoration: none;
-    color: black;
+    color: #25003b;
   }
 
   .right-content li a {
     padding: 5px 7px 6px 5px;
     display: inline-block;
     position: relative;
-    color: #000000;
+    color: #25003b;
     border-radius: 100px;
   }
 
@@ -1281,6 +1281,79 @@ img{
   }
 
   /* =========================== /End-Modal/ ========================== */
+
+
+  /* =========================== /Start-Floating-Profile/ ========================== */
+
+  .floating-profile-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999999999999999;
+    // width: 500px;
+    // height: 500px;
+    max-width: 80%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.479);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    clear: both;
+    display: none;
+  }
+
+  .floating-profile-container.show{
+    display: block;
+  }
+
+
+
+  .floating-profile-container .close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .floating-profile-container .main-heading {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Merriweather;
+  }
+
+  .floating-profile-container .content .image-container {
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    // margin-bottom: 20px;
+  }
+  
+  .floating-profile-container .content .image-container img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .floating-profile-container .content .details-container {
+    float: right;
+    overflow: hidden;
+    margin-left: 20px;
+
+    & .name{
+      font-size: 20px;
+      // font-weight: bold;
+      margin-bottom: 10px;
+      font-family: bungee;
+      color: #242424d0;
+    }
+  }
+  /* =========================== /End-Floating-Profile/ ========================== */
   
 
 }
@@ -1333,12 +1406,13 @@ p {
   content: "";
   width: 35px;
   height: 3px;
+  overflow: hidden;
   left: 0;
   bottom: 0;
   border-left: 10px solid #fff;
   border-right: 10px solid #fff;
   -webkit-animation: animborder 2s linear infinite;
-  animation: animborder 2s linear infinite;
+  animation: animborder 2.4s linear infinite;
 }
 
 @-webkit-keyframes animborder {
@@ -1346,9 +1420,13 @@ p {
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
-  100% {
+  50% {
     -webkit-transform: translateX(113px);
     transform: translateX(113px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -1357,9 +1435,13 @@ p {
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
-  100% {
+  50% {
     -webkit-transform: translateX(113px);
     transform: translateX(113px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -1412,7 +1494,7 @@ p {
 }
 
 .dk-footer {
-  padding: 75px 0 0;
+  padding: 57px 0 0;
   background-color: #151414;
   position: relative;
   z-index: 2;
@@ -1660,8 +1742,8 @@ p {
 }
 
 .copyright {
-  padding: 28px 0;
-  margin-top: 55px;
+  padding: 22px 0;
+  margin-top: 25px;
   background-color: #202020;
 }
 .copyright span,
@@ -1877,7 +1959,7 @@ p {
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
-    max-width: fit-content;
+    max-width: 85%;
   }
 }
 
