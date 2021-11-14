@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Cookie|Lato|Pacifico|Raleway|Merriweather|Modak|Ultra|Bungee|Rochester|Rokkitt|Noto+Serif|Passion+One:wght@400;700;900|Roboto+Slab:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Cookie|Lato|Pacifico|Raleway|Merriweather|Modak|Ultra|Bungee|Rochester|Rokkitt|Encode+Sans:wght@400;500;700;900|Noto+Serif|Fredoka+One|Passion+One:wght@400;700;900|Roboto+Slab:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   padding: 0;
@@ -1246,34 +1246,64 @@ img {
     font-weight: bold;
   }
   .floating-profile-container .main-heading {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-bottom: 25px;
     text-align: center;
-    font-family: Merriweather;
+    letter-spacing: 1px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    border-bottom: 4px solid #a3086f;
+    color: rgba(24, 24, 24, 0.904);
+    font-family: 'Fredoka One', cursive;
+  }
+  .floating-profile-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .floating-profile-container .content .image-container {
-    border-radius: 10px;
-    float: left;
-    overflow: hidden;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .floating-profile-container .content .image-container img {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
   }
   .floating-profile-container .content .details-container {
-    float: right;
-    overflow: hidden;
     margin-left: 20px;
   }
   .floating-profile-container .content .details-container .name {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 2px;
     font-family: bungee;
     color: #242424d0;
+    text-transform: uppercase;
+  }
+  .floating-profile-container .content .details-container .skills {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: lato;
+    font-weight: bold;
+    color: #181818d0;
   }
   .floating-profile-container .content .details-container .details {
+    font-family: 'Encode Sans', sans-serif;
     width: 100%;
+    font-weight: 700;
+    color: #1b1b1bc5;
+  }
+  .floating-profile-container .content .details-container .details p {
+    margin-bottom: 5px;
+  }
+  .floating-profile-container .content .details-container .details p span {
+    font-weight: 900;
+    color: #1d1d1de3;
   }
   /* =========================== /End-Floating-Profile/ ========================== */
 }
@@ -1298,6 +1328,10 @@ img {
   font-size: 16px;
   color: white;
   line-height: 28px;
+}
+
+footer p {
+  color: white;
 }
 
 .animate-border {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Cookie|Lato|Pacifico|Raleway|Merriweather|Modak|Ultra|Bungee|Rochester|Rokkitt|Noto+Serif|Passion+One:wght@400;700;900|Roboto+Slab:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Cookie|Lato|Pacifico|Raleway|Merriweather|Modak|Ultra|Bungee|Rochester|Rokkitt|Encode+Sans:wght@400;500;700;900|Noto+Serif|Fredoka+One|Passion+One:wght@400;700;900|Roboto+Slab:wght@300;400&display=swap");
 
 // $lightThemeColor: #94f17a;
 // $themeColor: #a1ee6e;
@@ -1321,42 +1321,71 @@ img{
   }
 
   .floating-profile-container .main-heading {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-bottom: 25px;
     text-align: center;
-    font-family: Merriweather;
+    letter-spacing: 1px;
+    width: fit-content;
+    text-align: center;
+    border-bottom: 4px solid #a3086f;
+    // padding-bottom: 2px;
+    color: rgba(24, 24, 24, 0.904);
+    font-family: 'Fredoka One', cursive;
   }
 
-  .floating-profile-container .content .image-container {
-    border-radius: 10px;
-    float: left;
-    overflow: hidden;
-    // margin-bottom: 20px;
+  .floating-profile-container .content{
+    display: flex;
+
+    & .image-container {
+      align-self: center;
+      // margin-bottom: 20px;
+    }
+
+    & .image-container img{
+      width: 270px;
+      height: 270px;
+      border-radius: 10px;
+    }
+
+    & .details-container {
+      margin-left: 20px;
+  
+      & .name{
+        font-size: 22px;
+        margin-bottom: 2px;
+        font-family: bungee;
+        color: #242424d0;
+        text-transform: uppercase;
+      }
+
+      & .skills{
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-family: lato;
+        font-weight: bold;
+        color: #181818d0;
+      }
+  
+      & .details{
+        font-family: 'Encode Sans', sans-serif;
+        width: 100%;
+        font-weight: 700;
+        color: #1b1b1bc5;
+
+        & p{
+          margin-bottom: 5px;
+
+          & span{
+            font-weight: 900;
+            color: #1d1d1de3;
+          }
+        }
+      }
+    }
   }
   
-  .floating-profile-container .content .image-container img{
-    width: 300px;
-    height: 300px;
-  }
-
-  .floating-profile-container .content .details-container {
-    float: right;
-    overflow: hidden;
-    margin-left: 20px;
-
-    & .name{
-      font-size: 20px;
-      // font-weight: bold;
-      margin-bottom: 10px;
-      font-family: bungee;
-      color: #242424d0;
-    }
-
-    & .details{
-      width: 100%;
-    }
-  }
   /* =========================== /End-Floating-Profile/ ========================== */
   
 
@@ -1393,6 +1422,10 @@ img{
   font-size: 16px;
   color: white;
   line-height: 28px;
+}
+
+footer p{
+  color: white;
 }
 
 
