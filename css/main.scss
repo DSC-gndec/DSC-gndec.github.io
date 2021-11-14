@@ -5,7 +5,7 @@
 // $darkThemeColor: #49bb2a;
 
 $lightThemeColor: #ffaebeb0;
-$themeColor: rgba(251, 172, 188, 0.988);
+$themeColor: #fbacbcfc;
 $darkThemeColor: #ec617dfc;
 
 * {
@@ -1352,6 +1352,10 @@ img{
       font-family: bungee;
       color: #242424d0;
     }
+
+    & .details{
+      width: 100%;
+    }
   }
   /* =========================== /End-Floating-Profile/ ========================== */
   
@@ -1385,13 +1389,12 @@ img{
 
 .footer-widget p {
   margin-bottom: 27px;
-}
-p {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   color: white;
   line-height: 28px;
 }
+
 
 .animate-border {
   position: relative;
@@ -2484,182 +2487,13 @@ textarea.input100 {
   /* =========================== /End-Contact-Page/ ========================== */
 
   /* =========================== /Start-About Us Page/ ========================== */
-  @media (min-width: 1200px) {
-  .aim{
-    padding: 3% 5% 3% 5%;
+  .history-body{
+    padding: 3% 10% 3% 10%;
   }
-  .postionholders{
+  .postionholders-body{
     padding: 3% 20% 3% 20%;
   }
-  .goals{
-    padding: 3% 5% 3% 5%;
-  }
-  .goals-body{
-    width: 50%;
-    margin: 0 auto;
-
-  }
-  .goals-body-picture{
-    width: 40%;
-    height: auto;
-    
-  }
-  .goals-body-picture img{
-    width: 100%;
-    height: auto;
-  }
-  .aim-body{
-    width: 50%;
-    margin-top: 30px;
-  }
-  .aim-body-picture{
-    width: 50%;
-    height: auto;
-  }
-  .aim-body-picture img{
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-width: 1200px) {
-  .aim-body-picture{
-    width: 100%;
-    height: auto;
-    margin: 5px;
-  }
-  .aim-body-picture img{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0px;
-  }
-  .aim{
-    padding: 3% 5% 3% 5%;
-  }
-  .goals-body-picture{
-    width: 100%;
-    height: auto;
   
-  }
-  .goals-body-picture img{
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-  }
-  .goals{
-    padding: 3% 7% 3% 7%;
-  }
-  .row{
-    margin: 0 auto;
-  }
-    
-
-}
       
-@media (max-width: 1130px) {
-  .aim-body-picture{
-    width: 100%;
-    height: auto;
-    margin: 5px;
-  }
-  .aim-body-picture img{
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-  }
-  .aim{
-    padding: 3% 5% 3% 5%;
-  }
-  .goals-body-picture{
-    width: 100%;
-    height: 100%;
-  
-  }
-  .goals-body-picture img{
-    width: 100%;
-    height: 100%;
-  }
-  .goals{
-    padding: 3% 7% 3% 7%;
 
-}
 
-@media (max-width: 992px) {
-  .aim-body-picture{
-    width: 100%;
-    height: 100%;
-  }
-  .aim-body-picture img{
-    width: 100%;
-    height: 100%;
-  }
-  .aim{
-    padding: 3% 5% 3% 5%;
-  }
-  .goals-body-picture{
-    width: 100%;
-    height: 100%;
-  
-  }
-  .goals-body-picture img{
-    width: 100%;
-    height: 100%;
-  }
-  .goals{
-    padding: 3% 7% 3% 7%;
-}
-@media (max-width: 768px) {
-
-  .aim-body-picture{
-    width: 100%;
-    height: 100%;
-  }
-  .aim-body-picture img{
-    width: 100%;
-    height: 100%;
-  }
-  .aim{
-    padding: 3% 5% 3% 5%;
-  }
-  .goals-body-picture{
-    width: 100%;
-    height: 100%;
-  
-  }
-  .goals-body-picture img{
-    width: 100%;
-    height: 100%;
-  }
-  .goals{
-    padding: 3% 7% 3% 7%;
-}
-@media (max-width: 576px) {
-  .aim-body-picture{
-    width: 100%;
-    height: 100%;
-  
-  }
-  .aim-body-picture img{
-    width: 100%;
-    height: 100%;
-  }
-  .aim{
-    padding: 3% 5% 3% 5%;
-  }
-  .goals-body-picture{
-    width: 100%;
-    height: auto;
-  
-  }
-  .goals-body-picture img{
-    width: 100%;
-    height: 70%;
-    margin: 0 auto;
-    padding: 0px;
-  }
-  .goals{
-    padding: 3% 7% 3% 7%;
-  }
-}
-/* =========================== /End-About Us Page/ ========================== */
