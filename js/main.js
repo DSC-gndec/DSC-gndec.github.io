@@ -160,5 +160,51 @@ catch(err){};
 
 // ========================= /End-Contact-form/=================================
 
+// ========================= /Start-Profile/=================================
+var profile_container = document.querySelector('.floating-profile-container');
+document.querySelectorAll('#show-profile').forEach(element => {
+  element.addEventListener('click', function(e) {
+    // .classList.add("show");
+    if(element.getAttribute('data-profile')=="Amanjot_singh"){
+      profile_container.querySelector('img').setAttribute('src', "./images/Amanjot.jpg");
+      profile_container.querySelector('.name').innerHTML = "Amanjot Singh";
+      profile_container.querySelector('.details').innerHTML = "<p>Student of 3<sup>rd</sup> year (Computer Science Engineering)</p><p>Guru Nanak Dev Engineering College, Ludhiana</p><p><span>Contact Number –</span> 8427406998</p><p><span>Email Id –</span> amanjots726@gmail.com</p>";
+      profile_container.querySelector('.fa-facebook').parentElement.setAttribute('href', "https://bit.ly/Facebook-Amanjot_singh");
+      profile_container.querySelector('.fa-linkedin').parentNode.setAttribute('href', "https://www.linkedin.com/in/amanjot-singh-9631581b7");
+      profile_container.querySelector('.fa-instagram').parentNode.setAttribute('href', "https://bit.ly/Instagram-Amanjot_Singh");
+      profile_container.querySelector('.fa-envelope').parentNode.setAttribute('href', "Mailto:amanjots726@gmail.com");
+      profile_container.querySelector('.fa-github').parentNode.setAttribute('href', "https://github.com/Amanjot726");
+      profile_container.classList.add("show");
+      profile_container.parentNode.classList.add("show");
+      document.body.style.overflow = "hidden";
+    }
+    if(element.getAttribute('data-profile')=="Priyanka_Jhamb"){
+      profile_container.querySelector('img').setAttribute('src', "./images/Priyanka.jpg");
+      profile_container.querySelector('.name').innerHTML = "Priyanka Jhamb";
+      profile_container.querySelector('.details').innerHTML = "<p>Student of 3<sup>rd</sup> year (Computer Science Engineering)</p> <p>Guru Nanak Dev Engineering College, Ludhiana</p> <p><span>Contact Number –</span> 9501045140</p> <p><span>Email Id –</span> priyankajhamb73@gmail.com</p>";
+      profile_container.querySelector('.fa-facebook').parentNode.setAttribute('href', "");
+      profile_container.querySelector('.fa-linkedin').parentNode.setAttribute('href', "linkedin.com/in/priyanka-jhamb-81323b1a9");
+      profile_container.querySelector('.fa-instagram').parentNode.setAttribute('href', "https://www.instagram.com/jhamb303/");
+      profile_container.querySelector('.fa-envelope').parentNode.setAttribute('href', "Mailto:priyankajhamb73@gmail.com");
+      profile_container.querySelector('.fa-github').parentNode.setAttribute('href', "https://github.com/PriyankaJhamb");
+      profile_container.classList.add("show");
+      profile_container.parentNode.classList.add("show");
+      document.body.style.overflow = "hidden";
+    }
+  });
+});
+
+document.querySelector('button.close-button').addEventListener('click', function(e) {
+  profile_container.classList.remove("show");
+  profile_container.parentNode.classList.remove("show");
+  document.body.style.overflow = "visible";
+});
+
+document.querySelector('.bg-overlay').addEventListener('click', function(e) {
+  profile_container.classList.remove("show");
+  profile_container.parentNode.classList.remove("show");
+  document.body.style.overflow = "visible";
+});
+
 
 // document.getElementById("").style.display
