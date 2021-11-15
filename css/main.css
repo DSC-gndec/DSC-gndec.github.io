@@ -183,9 +183,7 @@ img {
     -webkit-transform: scale(0.85);
             transform: scale(0.85);
   }
-  .bar1,
-  .bar2,
-  .bar3 {
+  .bar1, .bar2, .bar3 {
     width: 23px;
     height: 2.55px;
     background-color: #333;
@@ -339,8 +337,6 @@ img {
     outline: none;
     text-decoration: none;
     color: #25003b;
-  }
-  .right-content li a {
     padding: 5px 6px 5px 4px;
     display: inline-block;
     position: relative;
@@ -453,6 +449,7 @@ img {
     font-weight: bold;
   }
   .event-page-banner .sub-heading p {
+    color: #fff;
     margin-top: 8px;
     font-size: 15px;
     font-family: Raleway;
@@ -488,6 +485,7 @@ img {
     font-weight: bold;
   }
   .contact-page-banner .sub-heading p {
+    color: #fff;
     margin-top: 8px;
     font-size: 15px;
     font-family: Raleway;
@@ -513,12 +511,7 @@ img {
     border-radius: 8px;
     margin-bottom: 8px;
   }
-  .overview-section .overview-row .overview-row-left {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .overview-section .overview-row .overview-row-right {
+  .overview-section .overview-row .overview-row-left, .overview-section .overview-row .overview-row-right {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -541,7 +534,7 @@ img {
   .encourage {
     background-color: #f8f8f8;
   }
-  .cards-container {
+  .encourage .cards-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -552,7 +545,7 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .card {
+  .encourage .card {
     max-width: 300px;
     margin: 12px;
     padding: 10px;
@@ -568,19 +561,19 @@ img {
     transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
     transition: cardbox-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
   }
-  .card:hover {
+  .encourage .card:hover {
     -webkit-transform: scale(1.045);
             transform: scale(1.045);
     -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
             box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
   }
-  .card-title {
+  .encourage .card-title {
     font-family: Merriweather;
     font-size: 16.5px;
     text-align: center;
     color: #000000;
   }
-  .card-body {
+  .encourage .card-body {
     text-align: justify;
     font-size: 14.5px;
     padding: 0 15px 10px 15px;
@@ -1035,6 +1028,244 @@ img {
     background-color: #bb0000;
   }
   /* =========================== /End-Floating-Profile/ ========================== */
+  /* =========================== /Start-About Us Page/ ========================== */
+  /* ============ /Start-about-us-page-divider/ ============ */
+  .about-page .divider {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* ============ /End-about-us-page-divider/ ============ */
+  /* ================ /Start-aim-block/ ================ */
+  .aim {
+    padding: 20px 24px;
+    min-width: 100px;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .aim .aim-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 30px 0 20px 0;
+  }
+  .aim .aim-content .aim-text {
+    text-indent: 30px;
+    text-align: justify;
+  }
+  .aim .aim-content .aim-content-img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .aim .aim-content .aim-content-img img {
+    width: 370px;
+    height: 250px;
+  }
+  /* ================ /End-aim-block/ ================ */
+  /* ================ /Start-goals-block/ ================ */
+  .goals {
+    padding: 20px 24px;
+    min-width: 100px;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .goals .goals-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 35px 0 20px 0;
+  }
+  .goals .goals-content .goals-text {
+    text-align: justify;
+    margin-left: 10px;
+  }
+  .goals .goals-content .goals-text ol {
+    margin-bottom: 0px;
+  }
+  .goals .goals-content .goals-content-img {
+    margin-right: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .goals .goals-content .goals-content-img img {
+    width: 370px;
+    height: 290px;
+  }
+  /* ================ /End-goals-block/ ================ */
+  /* ============= /Start-position-holders-block/ ============= */
+  .postionholders {
+    margin-bottom: 40px;
+  }
+  .postionholders .main-section-sub-heading {
+    font-size: 17px;
+    font-family: raleway;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -18px;
+    margin-bottom: 25px;
+  }
+  .postionholders tr td:nth-child(3) {
+    white-space: nowrap;
+  }
+  /* ============= /End-position-holders-block/ ============= */
+  /* ============== /Start-Milestone-carousel/ ============== */
+  .carousel-item {
+    height: 220px;
+  }
+  .carousel-caption {
+    height: 178px;
+    left: 0%;
+    right: 0%;
+    margin: 0 30px;
+    color: #000;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+  }
+  .carousel-caption .content {
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .carousel-indicators {
+    bottom: 3px;
+  }
+  .carousel-indicators li {
+    background-color: #000;
+  }
+  /* ============= /End-Milestone-carousel/ ============= */
+  /* ============= /Start-Teacher-profile-cards/ ============= */
+  .teachers {
+    padding: 25px 24px;
+  }
+  .teachers .teachers-body {
+    margin: 70px 0 0 0;
+  }
+  .teachers .teachers-body .t-card {
+    margin: 0 auto;
+    position: relative;
+    width: 240px;
+    height: 280px;
+    border-radius: 10px;
+    -webkit-perspective: 500px;
+            perspective: 500px;
+  }
+  .teachers .teachers-body .t-card .t-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  .teachers .teachers-body .t-card .t-content .t-front, .teachers .teachers-body .t-card .t-content .t-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    /* line-height: 300px; */
+    /* color: #03446A; */
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .teachers .teachers-body .t-card .t-content .t-front .t-card-img-top {
+    padding-top: 0 !important;
+    margin: 0 !important;
+    width: 298.5px;
+    height: 338px;
+    border-radius: 10px;
+    -webkit-filter: contrast(110%);
+            filter: contrast(110%);
+  }
+  .teachers .teachers-body .t-card .t-content .t-back {
+    /* background: #03446A; */
+    color: black;
+    border-radius: 10px;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info {
+    width: 87%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info .t-sub-title {
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-facebook, .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-facebook-square {
+    color: #3b5998;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-twitter {
+    color: #55ACEE;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-google-plus, .teachers .teachers-body .t-card .t-content .t-back .teacher-info .fa-envelope {
+    color: #e95b48;
+    font-size: 16px;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-linkedin {
+    color: #0976b4;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-github {
+    color: #1d1d1d;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-instagram {
+    color: #b7242a;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-pinterest {
+    color: #cb2027;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-youtube {
+    color: #bb0000;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa {
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .teachers .teachers-body .t-card:hover > .t-content {
+    border-radius: 10px;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  /* ============= /End-Teacher-profile-cards/ ============= */
+  /* =========================== /End-About Us Page/ ========================== */
 }
 
 @media screen and (min-width: 710px) {
@@ -1171,6 +1402,7 @@ img {
     font-size: 35px;
   }
   .banner .sub-heading p {
+    color: #fff;
     margin-top: 7px;
     font-size: 17px;
   }
@@ -1244,13 +1476,17 @@ img {
     font-weight: bold;
   }
   .event-page-banner .sub-heading p {
+    color: white;
     margin-top: 8px;
     font-size: 16px;
     font-family: Raleway;
   }
   /* =========================== /End--Event-Page-Banner/ ========================== */
   /* =========================== /Start-Encourage-Block/ ========================== */
-  .cards-container {
+  .encourage {
+    background-color: #f8f8f8;
+  }
+  .encourage .cards-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1263,7 +1499,7 @@ img {
     width: 100%;
     margin: 0 auto;
   }
-  .card {
+  .encourage .card {
     max-width: 300px;
     margin: 12px;
     padding: 22px 15px;
@@ -1279,19 +1515,19 @@ img {
     transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out;
     transition: box-shadow 0.22s ease-in-out, transform 0.22s ease-in-out, -webkit-box-shadow 0.22s ease-in-out, -webkit-transform 0.22s ease-in-out;
   }
-  .card:hover {
+  .encourage .card:hover {
     -webkit-transform: scale(1.045);
             transform: scale(1.045);
     -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
             box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.226);
   }
-  .card-title {
+  .encourage .card-title {
     font-family: Merriweather;
     font-size: 18px;
     text-align: center;
     color: #000000;
   }
-  .card-body {
+  .encourage .card-body {
     padding: 5px;
   }
   /* =========================== /End-Encourage-Block/ ========================== */
@@ -1438,6 +1674,7 @@ img {
     font-weight: bold;
   }
   .contact-page-banner .sub-heading p {
+    color: #fff;
     margin-top: 8px;
     font-size: 16px;
     font-family: Raleway;
@@ -1691,10 +1928,13 @@ img {
   }
   /* =========================== /End-Floating-Profile/ ========================== */
   /* =========================== /Start-About Us Page/ ========================== */
+  /* ============== /Start-about-page-divider/ ============== */
   .about-page .divider {
     width: 80%;
     margin: 0 auto;
   }
+  /* ============== /End-about-page-divider/ ============== */
+  /* ================ /Start-aim-block/ ================ */
   .aim {
     padding: 20px 24px;
     min-width: 700px;
@@ -1714,6 +1954,9 @@ img {
   .aim .aim-content .aim-text {
     text-indent: 30px;
     text-align: justify;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .aim .aim-content .aim-content-img {
     -ms-flex-item-align: center;
@@ -1724,8 +1967,10 @@ img {
     width: 370px;
     height: 250px;
   }
+  /* ================ /End-aim-block/ ================ */
+  /* ================ /Start-goals-block/ ================ */
   .goals {
-    padding: 20px 24px;
+    padding: 25px 24px;
     min-width: 700px;
     max-width: 80%;
     margin: 0 auto;
@@ -1742,6 +1987,10 @@ img {
   }
   .goals .goals-content .goals-text {
     text-align: justify;
+    margin-left: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .goals .goals-content .goals-text ol {
     margin-bottom: 0px;
@@ -1756,7 +2005,13 @@ img {
     width: 370px;
     height: 290px;
   }
-  .main-section-sub-heading {
+  /* ================ /End-goals-block/ ================ */
+  /* ============= /Start-position-holders-block/ ============= */
+  .postionholders {
+    padding: 25px 24px;
+    margin-bottom: 40px;
+  }
+  .postionholders .main-section-sub-heading {
     font-size: 17px;
     font-family: raleway;
     font-weight: bold;
@@ -1764,18 +2019,21 @@ img {
     margin-top: -18px;
     margin-bottom: 25px;
   }
-  .postionholders {
-    margin-bottom: 40px;
+  .postionholders tr td:nth-child(3) {
+    white-space: nowrap;
   }
+  /* ============= /End-position-holders-block/ ============= */
+  /* ============== /Start-Milestone-carousel/ ============== */
   .carousel-item {
-    height: 180px;
+    height: 200px;
   }
   .carousel-caption {
+    height: 150px;
     padding: 30px 0;
     max-width: 60%;
     margin: 0 auto;
     color: #000;
-    background-color: #f0f0f0;
+    background-color: #f6f6f6;
     border-radius: 12px;
   }
   .carousel-indicators {
@@ -1784,7 +2042,127 @@ img {
   .carousel-indicators li {
     background-color: #000;
   }
-  /* =========================== /End-About Us Page/ ========================== */
+  /* ============== /End-Milestone-carousel/ ============== */
+  /* ============= /Start-Teacher-profile-cards/ ============= */
+  .teachers {
+    padding: 25px 24px;
+  }
+  .teachers .teachers-body {
+    margin: 70px 0 0 0;
+  }
+  .teachers .teachers-body .t-card {
+    margin: 0 auto;
+    position: relative;
+    width: 240px;
+    height: 280px;
+    border-radius: 10px;
+    -webkit-perspective: 500px;
+            perspective: 500px;
+  }
+  .teachers .teachers-body .t-card .t-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  .teachers .teachers-body .t-card .t-content .t-front, .teachers .teachers-body .t-card .t-content .t-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    /* line-height: 300px; */
+    /* color: #03446A; */
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .teachers .teachers-body .t-card .t-content .t-front .t-card-img-top {
+    padding-top: 0 !important;
+    margin: 0 !important;
+    width: 298.5px;
+    height: 338px;
+    border-radius: 10px;
+    -webkit-filter: contrast(110%);
+            filter: contrast(110%);
+  }
+  .teachers .teachers-body .t-card .t-content .t-back {
+    /* background: #03446A; */
+    color: black;
+    border-radius: 10px;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info {
+    width: 87%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info .t-sub-title {
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-facebook, .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-facebook-square {
+    color: #3b5998;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-twitter {
+    color: #55ACEE;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-google-plus, .teachers .teachers-body .t-card .t-content .t-back .teacher-info .fa-envelope {
+    color: #e95b48;
+    font-size: 16px;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-linkedin {
+    color: #0976b4;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-github {
+    color: #1d1d1d;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-instagram {
+    color: #b7242a;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-pinterest {
+    color: #cb2027;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-youtube {
+    color: #bb0000;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa {
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .teachers .teachers-body .t-card:hover > .t-content {
+    border-radius: 10px;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  /* ============= /End-Teacher-profile-cards/ ============= */
+  /* ============================== /End-About Us Page/ ============================= */
 }
 
 .divider {
