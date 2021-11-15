@@ -1581,8 +1581,8 @@ img {
         align-self: center;
   }
   .floating-profile-container .content .image-container img {
-    max-width: 270px;
-    max-height: 270px;
+    max-width: 205px;
+    max-height: 205px;
     border-radius: 10px;
   }
   .floating-profile-container .content .details-container {
