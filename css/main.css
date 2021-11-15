@@ -1690,6 +1690,101 @@ img {
     background-color: #bb0000;
   }
   /* =========================== /End-Floating-Profile/ ========================== */
+  /* =========================== /Start-About Us Page/ ========================== */
+  .about-page .divider {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .aim {
+    padding: 20px 24px;
+    min-width: 700px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .aim .aim-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 30px 0 20px 0;
+  }
+  .aim .aim-content .aim-text {
+    text-indent: 30px;
+    text-align: justify;
+  }
+  .aim .aim-content .aim-content-img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .aim .aim-content .aim-content-img img {
+    width: 370px;
+    height: 250px;
+  }
+  .goals {
+    padding: 20px 24px;
+    min-width: 700px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .goals .goals-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 35px 0 20px 0;
+  }
+  .goals .goals-content .goals-text {
+    text-align: justify;
+  }
+  .goals .goals-content .goals-text ol {
+    margin-bottom: 0px;
+  }
+  .goals .goals-content .goals-content-img {
+    margin-right: 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .goals .goals-content .goals-content-img img {
+    width: 370px;
+    height: 290px;
+  }
+  .main-section-sub-heading {
+    font-size: 17px;
+    font-family: raleway;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -18px;
+    margin-bottom: 25px;
+  }
+  .postionholders {
+    margin-bottom: 40px;
+  }
+  .carousel-item {
+    height: 180px;
+  }
+  .carousel-caption {
+    padding: 30px 0;
+    max-width: 60%;
+    margin: 0 auto;
+    color: #000;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+  }
+  .carousel-indicators {
+    bottom: 9px;
+  }
+  .carousel-indicators li {
+    background-color: #000;
+  }
+  /* =========================== /End-About Us Page/ ========================== */
 }
 
 .divider {
@@ -2811,12 +2906,4 @@ textarea.input100 {
 }
 
 /* =========================== /End-Contact-Page/ ========================== */
-/* =========================== /Start-About Us Page/ ========================== */
-.history-body {
-  padding: 3% 10% 3% 10%;
-}
-
-.postionholders-body {
-  padding: 3% 20% 3% 20%;
-}
 /*# sourceMappingURL=main.css.map */
