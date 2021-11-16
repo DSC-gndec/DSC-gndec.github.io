@@ -1179,6 +1179,10 @@ img{
   .teachers{
     padding: 25px 24px;
 
+    & .teachers-content .main-section-heading{
+      letter-spacing: 1.3px;
+    }
+
     & .teachers-body{
       margin: 70px 0 0 0;
 
@@ -1234,6 +1238,11 @@ img{
               top: 50%;
               left: 50%;
               transform: translate(-50%,-50%);
+
+              & .card-title{
+                font-family: pacifico;
+                color: #252525;
+              }
     
               & .t-sub-title{
                 color: #000;
@@ -2994,7 +3003,7 @@ iframe {
   /* font-family: Montserrat-ExtraBold; */
   /* font-size: 24px; */
   // color: #534d7d;
-  color: #d1566efc;
+  color: #e95d79fc;
   line-height: 1.2;
   text-align: left;
   padding-bottom: 36px;
@@ -3029,7 +3038,7 @@ textarea.input100 {
   display: block;
   width: 100%;
   // background: #e6e6e6;
-  background: #efefef;
+  background: #f8f8f8;
   font-family: Montserrat-Bold;
   font-size: 15px;
   line-height: 1.5;
@@ -3053,7 +3062,7 @@ textarea.input100 {
   box-shadow: 0px 0px 0px 0px;
   // color: rgba(132,106,221, 0.5);
   // color: #ec617dfc;
-  color: #ec617dfc;
+  color: #f17e95de;
 
 }
 
@@ -3064,14 +3073,14 @@ textarea.input100 {
 
 @-webkit-keyframes anim-shadow {
   to {
-    box-shadow: 0px 0px 60px 25px;
+    box-shadow: 0px 0px 30px 15px;
     opacity: 0;
   }
 }
 
 @keyframes anim-shadow {
   to {
-    box-shadow: 0px 0px 60px 25px;
+    box-shadow: 0px 0px 30px 15px;
     opacity: 0;
   }
 }
@@ -3094,7 +3103,7 @@ textarea.input100 {
   // padding-right: 150px;
   pointer-events: none;
   // color: #aaaaaa;
-  color: #ffaebeb0;
+  color: #f895a9b9;
 
   font-size: 15px;
 
@@ -3129,9 +3138,12 @@ textarea.input100 {
   height: 50px;
   border-radius: 25px;
   // background: #534d7d;
-  background: #d1566efc;
-  font-family: Montserrat-Bold;
+  // background: #d1566efc;
+  background: #f06480fc;
+  font-family: Raleway;
   font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
   line-height: 1.5;
   color: #fff;
   display: -webkit-box;
@@ -3151,7 +3163,7 @@ textarea.input100 {
 
 .contact100-form-btn:hover {
   // background: #333333;
-  background: #ffaebeb0;
+  background: #f1768f;
 
 }
 
