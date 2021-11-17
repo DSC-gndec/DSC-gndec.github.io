@@ -162,6 +162,7 @@ catch(err){};
 
 // ========================= /Start-Profile/=================================
 var profile_container = document.querySelector('.floating-profile-container');
+var profile_bg = document.querySelector('.bg-overlay');
 document.querySelectorAll('#show-profile').forEach(element => {
   element.addEventListener('click', function(e) {
     // .classList.add("show");
@@ -176,7 +177,7 @@ document.querySelectorAll('#show-profile').forEach(element => {
       profile_container.querySelector('.fa-envelope').parentNode.setAttribute('href', "Mailto:amanjots726@gmail.com");
       profile_container.querySelector('.fa-github').parentNode.setAttribute('href', "https://github.com/Amanjot726");
       profile_container.classList.add("show");
-      profile_container.parentNode.classList.add("show");
+      profile_bg.classList.add("show");
       document.body.style.overflow = "hidden";
     }
     if(element.getAttribute('data-profile')=="Priyanka_Jhamb"){
@@ -184,13 +185,13 @@ document.querySelectorAll('#show-profile').forEach(element => {
       profile_container.querySelector('img').setAttribute('src', "./images/Priyanka.jpg");
       profile_container.querySelector('.name').innerHTML = "Priyanka Jhamb";
       profile_container.querySelector('.details').innerHTML = "<p>Student of B.Tech (Computer Science Engineering)</p> <p>Guru Nanak Dev Engineering College, Ludhiana</p> <p><span>Email Id –</span> priyankajhamb73@gmail.com</p>";
-      profile_container.querySelector('.fa-facebook').parentNode.setAttribute('href', "");
-      profile_container.querySelector('.fa-linkedin').parentNode.setAttribute('href', "linkedin.com/in/priyanka-jhamb-81323b1a9");
+      profile_container.querySelector('.fa-facebook').parentNode.setAttribute('href', "https://www.facebook.com/priyanka.jhamb.16");
+      profile_container.querySelector('.fa-linkedin').parentNode.setAttribute('href', "https://linkedin.com/in/priyanka-jhamb-81323b1a9");
       profile_container.querySelector('.fa-instagram').parentNode.setAttribute('href', "https://www.instagram.com/jhamb303/");
       profile_container.querySelector('.fa-envelope').parentNode.setAttribute('href', "Mailto:priyankajhamb73@gmail.com");
       profile_container.querySelector('.fa-github').parentNode.setAttribute('href', "https://github.com/PriyankaJhamb");
       profile_container.classList.add("show");
-      profile_container.parentNode.classList.add("show");
+      profile_bg.classList.add("show");
       document.body.style.overflow = "hidden";
     }
   });
@@ -198,13 +199,13 @@ document.querySelectorAll('#show-profile').forEach(element => {
 
 document.querySelector('button.close-button').addEventListener('click', function(e) {
   profile_container.classList.remove("show");
-  profile_container.parentNode.classList.remove("show");
+  profile_bg.classList.remove("show");
   document.body.style.overflow = "visible";
 });
 
 document.querySelector('.bg-overlay').addEventListener('click', function(e) {
   profile_container.classList.remove("show");
-  profile_container.parentNode.classList.remove("show");
+  profile_bg.classList.remove("show");
   document.body.style.overflow = "visible";
 });
 

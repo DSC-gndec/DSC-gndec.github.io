@@ -562,10 +562,10 @@ img{
     display: inline-block;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 2.5;
     outline: transparent;
-    padding: 0 2rem;
+    padding: 0.02rem 2rem;
     text-align: center;
     text-decoration: none;
     transition: box-shadow .2s ease-in-out;
@@ -590,9 +590,8 @@ img{
   /* =========================== /Start-section-heading/ ========================== */
 
   .main-section-heading{
-    // font-family: Pacifico;
-    font-family: serif;
-
+    font-family: Pacifico;
+    letter-spacing: 1px;
     font-size: 30px;
     font-weight: bold;
     color: #000000;
@@ -776,25 +775,26 @@ img{
   .custom-button {
     background-color: $themeColor;
     border-radius: 100px;
-    box-shadow: rgba(251, 172, 188, .35) 0 -25px 18px -14px inset,rgba(251, 172, 188, 0.25) 0 1px 2px,rgba(251, 172, 188, .25) 0 2px 4px,rgba(251, 172, 188, .25) 0 4px 8px,rgba(251, 172, 188, .25) 0 8px 16px,rgba(251, 172, 188, .25) 0 16px 32px;
     color: #ce2648fc;
     cursor: pointer;
     display: inline-block;
+    font-size: 14.5px;
+    font-weight: 600;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    padding: 6px 17px;
     text-align: center;
+    padding: 6px 17px;
     text-decoration: none;
     transition: all 250ms;
     border: 0;
-    font-size: 14.5px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    box-shadow: rgba(251, 172, 188, .35) 0 -25px 18px -14px inset,rgba(251, 172, 188, 0.25) 0 1px 2px,rgba(251, 172, 188, .25) 0 2px 4px,rgba(251, 172, 188, .25) 0 4px 8px,rgba(251, 172, 188, .25) 0 8px 16px,rgba(251, 172, 188, .25) 0 16px 32px;
   }
 
   .custom-button:hover {
-    box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset,rgba(251, 172, 188,.35) 0 1px 2px,rgba(251, 172, 188,.35) 0 2px 4px,rgba(251, 172, 188,.35) 0 4px 8px,rgba(251, 172, 188,.35) 0 8px 16px,rgba(251, 172, 188,.35) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
+    box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset,rgba(251, 172, 188,.35) 0 1px 2px,rgba(251, 172, 188,.35) 0 2px 4px,rgba(251, 172, 188,.35) 0 4px 8px,rgba(251, 172, 188,.35) 0 8px 16px,rgba(251, 172, 188,.35) 0 16px 32px;
   }
 
   /* =========================== /End-custom-button/ ========================== */
@@ -870,6 +870,7 @@ img{
   }
 
   .floating-profile-container.show{
+    position: fixed;
     animation: floating-profile-show 0.8s ease-in-out;
     opacity: 1;
   }
@@ -1069,14 +1070,16 @@ img{
         align-self: center;
 
         & img{
-          width: 370px;
-          height: 250px;
+          max-width: 370px;
+          max-height: 250px;
+          width: 100%;
         }
       }
     }
   }
 
   /* ================ /End-aim-block/ ================ */
+
   /* ================ /Start-whyjoin-block/ ================ */
   .whyjoin{
     padding: 20px 24px;
@@ -1098,8 +1101,9 @@ img{
         align-self: center;
 
         & img{
-          width: 370px;
-          height: 250px;
+          max-width: 370px;
+          max-height: 250px;
+          width: 100%;
         }
       }
     }
@@ -1133,8 +1137,9 @@ img{
         align-self: center;
 
         & img{
-          width: 370px;
-          height: 290px;
+          max-width: 370px;
+          max-height: 290px;
+          width: 100%;
         }
       }
     }
@@ -1157,6 +1162,10 @@ img{
       margin-bottom: 25px;
     }
 
+    & tr td:nth-child(1) , & tr th:nth-child(1) {
+      display: none;
+    }
+
     & tr td:nth-child(3){
       white-space: nowrap;
     }
@@ -1168,11 +1177,11 @@ img{
   /* ============== /Start-Milestone-carousel/ ============== */
 
   .carousel-item{
-    height: 220px;
+    height: 235px;
   }
 
   .carousel-caption{
-    height: 178px;
+    height: 206px;
     left: 0%;
     right: 0%;
     // max-width: 90%;
@@ -1206,10 +1215,14 @@ img{
   /* ============= /Start-Teacher-profile-cards/ ============= */
 
   .teachers{
-    padding: 25px 24px;
+    padding: auto;
 
-    & .teachers-content .main-section-heading{
-      letter-spacing: 1.3px;
+    & .teachers-content{ 
+      padding: 25px 24px;
+
+      & .main-section-heading{
+        letter-spacing: 1.3px;
+      }
     }
 
     & .teachers-body{
@@ -1279,6 +1292,10 @@ img{
                 color: #000;
                 text-align: center;
                 margin-bottom: 20px;
+              }
+
+              & .list-inline{
+                margin-bottom: 0px;
               }
     
               & ul .fa-facebook,ul .fa-facebook-square{color:#3b5998;}  
@@ -1630,7 +1647,7 @@ img{
     font-weight: 500;
     line-height: 2.5;
     outline: transparent;
-    padding: 0 2rem;
+    padding: 0 3rem;
     text-align: center;
     text-decoration: none;
     transition: box-shadow .2s ease-in-out;
@@ -1717,7 +1734,7 @@ img{
   /* =========================== /Start-custom-button/ ========================== */
 
   .custom-button {
-    padding: 7px 20px;
+    padding: 9px 20px;
     font-size: 16px;
   }
 
@@ -1834,6 +1851,7 @@ img{
   }
 
   .floating-profile-container.show{
+    position: fixed;
     animation: floating-profile-show 0.8s ease-in-out;
     opacity: 1;
   }
@@ -2126,7 +2144,11 @@ img{
       margin-bottom: 25px;
     }
 
-    & tr td:nth-child(3){
+    & tr td:nth-child(1) , & tr th:nth-child(1) {
+      display: table-cell;
+    }
+
+    & tr td:nth-child(2){
       white-space: nowrap;
     }
   }
@@ -2173,7 +2195,7 @@ img{
         margin: 0 auto;
         position: relative;
         width: 240px;
-        height: 280px;
+        height: 270px;
         border-radius: 10px;
         perspective: 500px;
     
@@ -2203,7 +2225,7 @@ img{
             padding-top: 0 !important;
             margin: 0 !important;    
             width: 240px;
-            height: 280px;
+            height: 270px;
             border-radius: 10px;
             filter: contrast(110%);
           }

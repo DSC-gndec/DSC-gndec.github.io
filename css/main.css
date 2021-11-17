@@ -603,10 +603,10 @@ img {
     display: inline-block;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 2.5;
     outline: transparent;
-    padding: 0 2rem;
+    padding: 0.02rem 2rem;
     text-align: center;
     text-decoration: none;
     -webkit-transition: -webkit-box-shadow .2s ease-in-out;
@@ -634,7 +634,8 @@ img {
   /* =========================== /End-Join-us/ ========================== */
   /* =========================== /Start-section-heading/ ========================== */
   .main-section-heading {
-    font-family: serif;
+    font-family: Pacifico;
+    letter-spacing: 1px;
     font-size: 30px;
     font-weight: bold;
     color: #000000;
@@ -752,31 +753,32 @@ img {
   .custom-button {
     background-color: #fbacbcfc;
     border-radius: 100px;
-    -webkit-box-shadow: rgba(251, 172, 188, 0.35) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.25) 0 1px 2px, rgba(251, 172, 188, 0.25) 0 2px 4px, rgba(251, 172, 188, 0.25) 0 4px 8px, rgba(251, 172, 188, 0.25) 0 8px 16px, rgba(251, 172, 188, 0.25) 0 16px 32px;
-            box-shadow: rgba(251, 172, 188, 0.35) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.25) 0 1px 2px, rgba(251, 172, 188, 0.25) 0 2px 4px, rgba(251, 172, 188, 0.25) 0 4px 8px, rgba(251, 172, 188, 0.25) 0 8px 16px, rgba(251, 172, 188, 0.25) 0 16px 32px;
     color: #ce2648fc;
     cursor: pointer;
     display: inline-block;
+    font-size: 14.5px;
+    font-weight: 600;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    padding: 6px 17px;
     text-align: center;
+    padding: 6px 17px;
     text-decoration: none;
     -webkit-transition: all 250ms;
     transition: all 250ms;
     border: 0;
-    font-size: 14.5px;
     -moz-user-select: none;
      -ms-user-select: none;
          user-select: none;
     -webkit-user-select: none;
     -ms-touch-action: manipulation;
         touch-action: manipulation;
+    -webkit-box-shadow: rgba(251, 172, 188, 0.35) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.25) 0 1px 2px, rgba(251, 172, 188, 0.25) 0 2px 4px, rgba(251, 172, 188, 0.25) 0 4px 8px, rgba(251, 172, 188, 0.25) 0 8px 16px, rgba(251, 172, 188, 0.25) 0 16px 32px;
+            box-shadow: rgba(251, 172, 188, 0.35) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.25) 0 1px 2px, rgba(251, 172, 188, 0.25) 0 2px 4px, rgba(251, 172, 188, 0.25) 0 4px 8px, rgba(251, 172, 188, 0.25) 0 8px 16px, rgba(251, 172, 188, 0.25) 0 16px 32px;
   }
   .custom-button:hover {
-    -webkit-box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.35) 0 1px 2px, rgba(251, 172, 188, 0.35) 0 2px 4px, rgba(251, 172, 188, 0.35) 0 4px 8px, rgba(251, 172, 188, 0.35) 0 8px 16px, rgba(251, 172, 188, 0.35) 0 16px 32px;
-            box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.35) 0 1px 2px, rgba(251, 172, 188, 0.35) 0 2px 4px, rgba(251, 172, 188, 0.35) 0 4px 8px, rgba(251, 172, 188, 0.35) 0 8px 16px, rgba(251, 172, 188, 0.35) 0 16px 32px;
     -webkit-transform: scale(1.05) rotate(-1deg);
             transform: scale(1.05) rotate(-1deg);
+    -webkit-box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.35) 0 1px 2px, rgba(251, 172, 188, 0.35) 0 2px 4px, rgba(251, 172, 188, 0.35) 0 4px 8px, rgba(251, 172, 188, 0.35) 0 8px 16px, rgba(251, 172, 188, 0.35) 0 16px 32px;
+            box-shadow: rgba(251, 172, 188, 0.55) 0 -25px 18px -14px inset, rgba(251, 172, 188, 0.35) 0 1px 2px, rgba(251, 172, 188, 0.35) 0 2px 4px, rgba(251, 172, 188, 0.35) 0 4px 8px, rgba(251, 172, 188, 0.35) 0 8px 16px, rgba(251, 172, 188, 0.35) 0 16px 32px;
   }
   /* =========================== /End-custom-button/ ========================== */
   /* =========================== /Start-Modal/ ========================== */
@@ -846,6 +848,7 @@ img {
     opacity: 0;
   }
   .floating-profile-container.show {
+    position: fixed;
     -webkit-animation: floating-profile-show 0.8s ease-in-out;
             animation: floating-profile-show 0.8s ease-in-out;
     opacity: 1;
@@ -1062,8 +1065,9 @@ img {
         align-self: center;
   }
   .aim .aim-content .aim-content-img img {
-    width: 370px;
-    height: 250px;
+    max-width: 370px;
+    max-height: 250px;
+    width: 100%;
   }
   /* ================ /End-aim-block/ ================ */
   /* ================ /Start-whyjoin-block/ ================ */
@@ -1093,8 +1097,9 @@ img {
         align-self: center;
   }
   .whyjoin .whyjoin-content .whyjoin-content-img img {
-    width: 370px;
-    height: 250px;
+    max-width: 370px;
+    max-height: 250px;
+    width: 100%;
   }
   /* ================ /End-whyjoin-block/ ================ */
   /* ================ /Start-goals-block/ ================ */
@@ -1128,8 +1133,9 @@ img {
         align-self: center;
   }
   .goals .goals-content .goals-content-img img {
-    width: 370px;
-    height: 290px;
+    max-width: 370px;
+    max-height: 290px;
+    width: 100%;
   }
   /* ================ /End-goals-block/ ================ */
   /* ============= /Start-position-holders-block/ ============= */
@@ -1144,16 +1150,19 @@ img {
     margin-top: -18px;
     margin-bottom: 25px;
   }
+  .postionholders tr td:nth-child(1), .postionholders tr th:nth-child(1) {
+    display: none;
+  }
   .postionholders tr td:nth-child(3) {
     white-space: nowrap;
   }
   /* ============= /End-position-holders-block/ ============= */
   /* ============== /Start-Milestone-carousel/ ============== */
   .carousel-item {
-    height: 220px;
+    height: 235px;
   }
   .carousel-caption {
-    height: 178px;
+    height: 206px;
     left: 0%;
     right: 0%;
     margin: 0 30px;
@@ -1179,6 +1188,9 @@ img {
   /* ============= /End-Milestone-carousel/ ============= */
   /* ============= /Start-Teacher-profile-cards/ ============= */
   .teachers {
+    padding: auto;
+  }
+  .teachers .teachers-content {
     padding: 25px 24px;
   }
   .teachers .teachers-content .main-section-heading {
@@ -1256,6 +1268,9 @@ img {
     color: #000;
     text-align: center;
     margin-bottom: 20px;
+  }
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info .list-inline {
+    margin-bottom: 0px;
   }
   .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-facebook, .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-facebook-square {
     color: #3b5998;
@@ -1594,7 +1609,7 @@ img {
     font-weight: 500;
     line-height: 2.5;
     outline: transparent;
-    padding: 0 2rem;
+    padding: 0 3rem;
     text-align: center;
     text-decoration: none;
     -webkit-transition: -webkit-box-shadow .2s ease-in-out;
@@ -1678,7 +1693,7 @@ img {
   /* =========================== /End-Events-Block/ ========================== */
   /* =========================== /Start-custom-button/ ========================== */
   .custom-button {
-    padding: 7px 20px;
+    padding: 9px 20px;
     font-size: 16px;
   }
   /* =========================== /End-custom-button/ ========================== */
@@ -1783,6 +1798,7 @@ img {
     opacity: 0;
   }
   .floating-profile-container.show {
+    position: fixed;
     -webkit-animation: floating-profile-show 0.8s ease-in-out;
             animation: floating-profile-show 0.8s ease-in-out;
     opacity: 1;
@@ -2091,7 +2107,10 @@ img {
     margin-top: -18px;
     margin-bottom: 25px;
   }
-  .postionholders tr td:nth-child(3) {
+  .postionholders tr td:nth-child(1), .postionholders tr th:nth-child(1) {
+    display: table-cell;
+  }
+  .postionholders tr td:nth-child(2) {
     white-space: nowrap;
   }
   /* ============= /End-position-holders-block/ ============= */
@@ -2126,7 +2145,7 @@ img {
     margin: 0 auto;
     position: relative;
     width: 240px;
-    height: 280px;
+    height: 270px;
     border-radius: 10px;
     -webkit-perspective: 500px;
             perspective: 500px;
@@ -2162,7 +2181,7 @@ img {
     padding-top: 0 !important;
     margin: 0 !important;
     width: 240px;
-    height: 280px;
+    height: 270px;
     border-radius: 10px;
     -webkit-filter: contrast(110%);
             filter: contrast(110%);
