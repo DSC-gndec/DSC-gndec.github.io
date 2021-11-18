@@ -21,7 +21,7 @@ $darkThemeColor: #ec617dfc;
 
 body {
   overscroll-behavior-y: none;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -35,24 +35,32 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 9px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5.5px rgb(167, 167, 167);
+  box-shadow: inset 0 0 4.5px rgb(167, 167, 167);
   border-radius: 2px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(175, 175, 175);
+  -webkit-box-shadow: inset -0.4px 0px 3px 1.3px rgba(226,226,226,1);
+  -moz-box-shadow: inset -0.4px 0px 3px 1.3px rgba(226,226,226,1);
+  box-shadow: inset -0.4px 0px 3px 1.3px rgba(226,226,226,1);
+  // -webkit-box-shadow: inset 0px 0px 0px 2px rgb(248, 244, 244);
+  // -webkit-box-shadow: inset -2px 0px 0px 1px rgb(248, 244, 244);
+  // -moz-box-shadow: inset -2px 0px 0px 1px rgb(248, 244, 244);
+  // box-shadow: inset -2px 0px 0px 1px rgb(248, 244, 244);
+  background: #594374fc;
+  // background: #f7734b;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(160, 160, 160);
+  background: #3d2e50fc;
 }
 
 img{
@@ -188,7 +196,7 @@ img{
   }
 
   .right-content {
-    z-index: 3;
+    z-index: 1000;
     text-align: right;
     position: absolute;
     right: 12px;
@@ -867,10 +875,12 @@ img{
     overflow: hidden;
     clear: both;
     opacity: 0;
+    visibility: hidden;
   }
 
   .floating-profile-container.show{
     position: fixed;
+    visibility: visible;
     animation: floating-profile-show 0.8s ease-in-out;
     opacity: 1;
   }
