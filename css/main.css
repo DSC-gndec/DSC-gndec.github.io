@@ -803,6 +803,9 @@ img {
   .modal-content {
     border-radius: 8px;
   }
+  .modal-title {
+    text-transform: uppercase;
+  }
   /* =========================== /End-Modal/ ========================== */
   /* =========================== /Start-Floating-Profile/ ========================== */
   .bg-overlay {
