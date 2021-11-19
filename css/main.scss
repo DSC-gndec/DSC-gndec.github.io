@@ -63,6 +63,11 @@ body {
   background: #3d2e50fc;
 }
 
+::selection {
+  background: #ec617dfc;
+  color: #fff;
+}
+
 img{
   user-select: none;
   -webkit-user-drag: none;
@@ -2483,9 +2488,14 @@ footer p{
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: inline-flex;
+  align-items: center;
 }
 .dk-footer-box-info .footer-social-link li {
   display: inline-block;
+}
+.dk-footer-box-info .footer-social-link a{
+  text-decoration: none;
 }
 .dk-footer-box-info .footer-social-link a i {
   display: block;
@@ -2508,15 +2518,22 @@ footer p{
   background-color: #dd4b39;
 }
 .dk-footer-box-info .footer-social-link a i.fa-linkedin {
+  font-size: 17.5px;
   background-color: #0976b4;
 }
 .dk-footer-box-info .footer-social-link a i.fa-instagram {
+  font-size: 19.5px;
   background-color: #b7242a;
 }
 .dk-footer-box-info .footer-social-link a i.fa-envelope {
   background-color: #dd3427;
 }
+.dk-footer-box-info .footer-social-link a i.fa-whatsapp {
+  font-size: 20px;
+  background-color: #25D366;
+}
 .dk-footer-box-info .footer-social-link a i.fa-youtube-play {
+  font-size: 18.5px;
   background-color: #e00101;
 }
 
@@ -2668,26 +2685,51 @@ footer p{
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-decoration: none !important;
 }
 
 .contact-icon {
   position: absolute;
+  text-decoration: none;
 }
 .contact-icon i {
   font-size: 36px;
   top: -5px;
   position: relative;
   color: #007bff;
+  text-decoration: none !important;
 }
 
 .contact-info {
   margin-left: 75px;
   color: #fff;
+  text-decoration: none !important;
+  -webkit-touch-callout: initial;
+  -webkit-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+
 }
 .contact-info h3 {
   font-size: 20px;
   color: #fff;
   margin-bottom: 0;
+  -webkit-touch-callout: initial;
+  -webkit-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+  text-decoration: none !important;
+  cursor: text;
 }
 
 .copyright {

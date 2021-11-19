@@ -67,6 +67,7 @@ var Subscribe_form = document.getElementById("my-form");
 // var s_form_check = 0;
 async function handleSubscribe(event) {
   event.preventDefault();
+  subscribe_local_data = get_data_object("subscribe_form_data");
 
   var data = new FormData(event.target);
   if (data.get("email") == ""){
@@ -84,12 +85,9 @@ async function handleSubscribe(event) {
     }).then(response => {
       if (response.ok) {
         snackbar("Thanks for subscribing!");
-        Subscribe_form.reset()
-        var val = JSON.parse(localStorage.getItem("subscribe_form_data"));
-        val.data+=1;
-        var object2 = {data: val.data, expire_date: val.expire_date};
-        localStorage.setItem("subscribe_form_data", JSON.stringify(object2));
-        console.log(JSON.parse(localStorage.getItem("subscribe_form_data")).data);
+        Subscribe_form.reset();
+        subscribe_local_data.data+=1;
+        Update_data("subscribe_form_data",subscribe_local_data.data);
       } else {
         console.log(response.status);
         snackbar("Oops! Facing some issues<br>Please try again later");
@@ -102,38 +100,105 @@ async function handleSubscribe(event) {
 }
 Subscribe_form.addEventListener("submit", function(event){
   event.preventDefault();
-  if(JSON.parse(localStorage.getItem("subscribe_form_data")).data != null){
-    console.log("1");
-    if(is_date_expired(JSON.parse(localStorage.getItem("subscribe_form_data")).expire_date)){
-      console.log("2");
-      console.log("here",JSON.parse(localStorage.getItem("subscribe_form_data")).expire_date);
-      console.log("here",JSON.parse(localStorage.getItem("subscribe_form_data")).data);
-      // Delete_data("subscribe_form_data");
+  subscribe_local_data = get_data_object("subscribe_form_data");
+  if(subscribe_local_data != null){
+    if(is_date_expired(subscribe_local_data.expire_date)){
+      Delete_data("subscribe_form_data");
     }
     else{
-      console.log("3");
-      if(JSON.parse(localStorage.getItem("subscribe_form_data")).data<2){
-        console.log("4");
-        console.log("here2",JSON.parse(localStorage.getItem("subscribe_form_data")).data);
+      if(subscribe_local_data.data<2){
         handleSubscribe(event);
       }
       else{
-        console.log("5");
-        console.log(JSON.parse(localStorage.getItem("subscribe_form_data")).data);
-        snackbar("Max 2 Attempts Reached<br>Retry after 24 hours");
+        snackbar("Max 2 Attempts Reached<br>Try again later");
+        Subscribe_form.reset();
       }
     }
   }
   else{
-    console.log("6");
-    // Save_data("subscribe_form_data",0,Add_24_Hours_to_Current_Date());
-    subscribe_local_data = get_data_object("subscribe_form_data");
-    console.log("here3",JSON.parse(localStorage.getItem("subscribe_form_data")).data);
+    Save_data("subscribe_form_data",0,Add_24_Hours_to_Current_Date());
     handleSubscribe(event);
   }
 });
 
 // ========================= /End-subscribe-form/=================================
+
+
+
+// ========================= /Start-Contact-form/=================================
+try{
+  var Contact_form = document.getElementById("contact-form");
+  var contact_local_data = get_data_object("contact_form_data");
+
+  async function handleContactForm(event) {
+    event.preventDefault();
+    contact_local_data = get_data_object("contact_form_data");
+    var data = new FormData(event.target);
+    if (data.get("name") == ""){
+      document.querySelector('#name').setAttribute('required', '');
+      snackbar("Please fill your name");
+      return;
+    }
+    if (data.get("email") == ""){
+      document.querySelector('#email').setAttribute('required', '');
+      snackbar("Please fill your email");
+      return;
+    }
+    if (data.get("message") == ""){
+      document.querySelector('#message').setAttribute('required', '');
+      snackbar("Please fill type something in message");
+      return;
+    }
+    else{
+      fetch(event.target.action, {
+        method: Contact_form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          snackbar("Thanks for giving your details<br>We will catch you soon.."); 
+          Contact_form.reset();
+          contact_local_data.data+=1;
+          Update_data("contact_form_data",contact_local_data.data);
+        } else {
+          snackbar("Oops! Facing some issues<br>Please try again later");
+        }
+      }).catch(error => {
+        snackbar("Oops! Facing some issues<br>Please try again later");
+      });
+    }
+
+    
+
+  }
+  Contact_form.addEventListener("submit", function(event){
+    event.preventDefault();
+    contact_local_data = get_data_object("contact_form_data");
+    if(contact_local_data != null){
+      if(is_date_expired(contact_local_data.expire_date)){
+        Delete_data("contact_form_data");
+      }
+      else{
+        if(contact_local_data.data<2){
+          handleContactForm(event);
+        }
+        else{
+          snackbar("Max 2 Attempts Reached<br>Try again later");
+          Contact_form.reset();
+        }
+      }
+    }
+    else{
+      Save_data("contact_form_data",0,Add_24_Hours_to_Current_Date());
+      handleContactForm(event);
+    }
+  });
+}
+catch(err){};
+
+// ========================= /End-Contact-form/=================================
 
 
 
@@ -156,70 +221,6 @@ enlargable_elements.forEach(element => {
 
 
 
-// ========================= /Start-Contact-form/=================================
-try{
-  var Contact_form = document.getElementById("contact-form");
-  async function handleContactForm(event) {
-    event.preventDefault();
-
-    var contact_local_data = get_data_object("contact_form_data");
-    if(contact_local_data != null){
-      if(is_date_expired(contact_local_data.expire_date)){
-        Delete_data("contact_form_data");
-      }
-      else{
-        if(contact_local_data.data<=2){
-          var data = new FormData(event.target);
-          if (data.get("name") == ""){
-            document.querySelector('#name').setAttribute('required', '');
-            snackbar("Please fill your name");
-            return;
-          }
-          if (data.get("email") == ""){
-            document.querySelector('#email').setAttribute('required', '');
-            snackbar("Please fill your email");
-            return;
-          }
-          if (data.get("message") == ""){
-            document.querySelector('#message').setAttribute('required', '');
-            snackbar("Please fill type something in message");
-            return;
-          }
-          else{
-            fetch(event.target.action, {
-              method: Contact_form.method,
-              body: data,
-              headers: {
-                  'Accept': 'application/json'
-              }
-            }).then(response => {
-              if (response.ok) {
-                snackbar("Thanks for giving your details<br>We will catch you soon.."); 
-                Contact_form.reset();
-                contact_local_data.data++;
-              } else {
-                snackbar("Oops! Facing some issues<br>Please try again later");
-              }
-            }).catch(error => {
-              snackbar("Oops! Facing some issues<br>Please try again later");
-            });
-          }
-        }
-        else{
-          snackbar("Max 2 Attempts Reached<br>Retry after 24 hours");
-        }
-      }
-    }
-    else{
-      Save_data("contact_form_data",0,Add_24_Hours_to_Current_Date());
-    }
-
-  }
-  Contact_form.addEventListener("submit", handleContactForm);
-}
-catch(err){};
-
-// ========================= /End-Contact-form/=================================
 
 // ========================= /Start-Profile/=================================
 var profile_container = document.querySelector('.floating-profile-container');
@@ -279,9 +280,17 @@ function Add_24_Hours_to_Current_Date(){
   return newDate;
 }
 
-function Save_data(key,data1) {
-  // var object = {data: data1, expire_date: expire_date};
-  localStorage.setItem(key, data1);
+function Save_data(key,data,expire_date) {
+  var object = {data: data, expire_date: expire_date}
+  localStorage.setItem(key, JSON.stringify(object));
+}
+
+function Update_data(main_key,data_value) {
+  var val = JSON.parse(localStorage.getItem(main_key));
+  var object = {data: data_value, expire_date: val.expire_date};
+  localStorage.removeItem(main_key);
+  localStorage.setItem(main_key, JSON.stringify(object));
+  console.log(JSON.parse(localStorage.getItem(main_key)).data);
 }
 
 function Delete_data(key) {
@@ -307,5 +316,6 @@ function is_date_expired(expire_date) {
   }
 }
 // ==================== /End-Local-Storage-Management/====================
+
 
 // document.getElementById("").style.display
