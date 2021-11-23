@@ -132,6 +132,31 @@ img {
   }
 }
 
+.hidden-img {
+  visibility: hidden;
+  height: 1px;
+  width: 1px;
+  display: contents;
+}
+
+.hidden-img::after {
+  visibility: hidden;
+  height: 1px;
+  width: 1px;
+  display: contents;
+  background-image: url("../images/Priyanka.jpg");
+  background-repeat: no-repeat;
+}
+
+.hidden-img::before {
+  visibility: hidden;
+  height: 1px;
+  width: 1px;
+  display: contents;
+  background-image: url("../images/Amanjot.jpg");
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 100px) {
   /* =========================== Header ========================== */
   .nav {
@@ -737,6 +762,7 @@ img {
     width: 280px;
     height: 200px;
     border-radius: 0 0 8px 8px;
+    cursor: pointer;
   }
   .event-section .event-row .event-row-right {
     -ms-flex-item-align: center;
@@ -1214,7 +1240,7 @@ img {
     letter-spacing: 1.3px;
   }
   .teachers .teachers-body {
-    margin: 70px 0 0 0;
+    margin: 20px 0 55px 0px;
   }
   .teachers .teachers-body .t-card {
     margin: 0 auto;
@@ -2156,7 +2182,7 @@ img {
     padding: 25px 24px;
   }
   .teachers .teachers-body {
-    margin: 70px 0 0 0;
+    margin: 20px 0 15px 0px;
   }
   .teachers .teachers-body .t-card {
     margin: 0 auto;
