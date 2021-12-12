@@ -825,16 +825,17 @@ img {
     padding: 0.8rem 1rem;
   }
   .modal-header .close {
+    padding: 0.8rem 1rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  .modal-header .close span {
-    font-size: 20px;
+  .close span {
+    font-size: 18px;
     /* font-weight: bold; */
     border: 1.8px solid #000000b3;
     color: #000000e0;
-    padding: 1px 6px 0px 6px;
-    font-family: sans-serif;
+    padding: 0px 6px 0px 6px;
+    font-family: Lato;
     border-radius: 50%;
     /* transform: scale(0.4); */
     /* margin-top: -4px; */
@@ -1812,6 +1813,24 @@ img {
         -ms-flex-align: end;
             align-items: flex-end;
     padding: 1rem 1rem;
+  }
+  .modal-header .close {
+    padding: 0.8rem 1rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .close span {
+    font-size: 19px;
+    /* font-weight: bold; */
+    border: 1.8px solid #000000b3;
+    color: #000000e0;
+    padding: 0px 7px 1px 7px;
+    font-family: Lato;
+    border-radius: 50%;
+    /* transform: scale(0.4); */
+    /* margin-top: -4px; */
+    -webkit-box-shadow: 0px 0px 12px -1.5px #0000007a;
+            box-shadow: 0px 0px 12px -1.5px #0000007a;
   }
   /* =========================== /End-Modal/ ========================== */
   /* =========================== /Start-Floating-Profile/ ========================== */
