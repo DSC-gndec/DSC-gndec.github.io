@@ -133,28 +133,10 @@ img {
 }
 
 .hidden-img {
+  height: 0px;
+  width: 0px;
   visibility: hidden;
-  height: 1px;
-  width: 1px;
-  display: contents;
-}
-
-.hidden-img::after {
-  visibility: hidden;
-  height: 1px;
-  width: 1px;
-  display: contents;
-  background-image: url("../images/Priyanka.jpg");
-  background-repeat: no-repeat;
-}
-
-.hidden-img::before {
-  visibility: hidden;
-  height: 1px;
-  width: 1px;
-  display: contents;
-  background-image: url("../images/Amanjot.jpg");
-  background-repeat: no-repeat;
+  background: url("../images/Amanjot.jpg") right/20px no-repeat, url("../images/Priyanka.jpg") left/20px no-repeat;
 }
 
 @media screen and (min-width: 100px) {
@@ -776,10 +758,11 @@ img {
     font-weight: bold;
     margin-top: 6px;
     letter-spacing: 1.2px;
+    text-transform: uppercase;
   }
   .event-section .event-row p {
     font-size: 15px;
-    padding: 15px 10px 0px 5px;
+    padding: 15px 10px 20px 5px;
     color: #000000;
   }
   /* =========================== /End-Events-Block/ ========================== */
@@ -831,6 +814,32 @@ img {
   }
   .modal-title {
     text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Merriweather';
+    font-weight: 600;
+  }
+  .modal-header {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0.8rem 1rem;
+  }
+  .modal-header .close {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .modal-header .close span {
+    font-size: 20px;
+    /* font-weight: bold; */
+    border: 1.8px solid #000000b3;
+    color: #000000e0;
+    padding: 1px 6px 0px 6px;
+    font-family: sans-serif;
+    border-radius: 50%;
+    /* transform: scale(0.4); */
+    /* margin-top: -4px; */
+    -webkit-box-shadow: 0px 0px 12px -1.5px #0000007a;
+            box-shadow: 0px 0px 12px -1.5px #0000007a;
   }
   /* =========================== /End-Modal/ ========================== */
   /* =========================== /Start-Floating-Profile/ ========================== */
@@ -868,6 +877,12 @@ img {
     to {
       opacity: 1;
     }
+  }
+  .hidden-img {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+    background: url("../images/Amanjot.jpg") right/20px no-repeat, url("../images/Priyanka.jpg") left/20px no-repeat;
   }
   .floating-profile-container {
     position: absolute;
@@ -1722,6 +1737,7 @@ img {
     font-family: Merriweather;
     font-weight: bold;
     padding: 0px 35px 0px 5px;
+    text-transform: uppercase;
   }
   .event-section .event-row .event-row-right {
     -ms-flex-item-align: center;
@@ -1784,6 +1800,19 @@ img {
   .modal-body {
     padding: 15px;
   }
+  .modal-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Merriweather';
+    font-weight: 900;
+    line-height: 1.2;
+  }
+  .modal-header {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 1rem 1rem;
+  }
   /* =========================== /End-Modal/ ========================== */
   /* =========================== /Start-Floating-Profile/ ========================== */
   .bg-overlay {
@@ -1820,6 +1849,12 @@ img {
     to {
       opacity: 1;
     }
+  }
+  .hidden-img {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+    background: url("../images/Amanjot.jpg") right/20px no-repeat, url("../images/Priyanka.jpg") left/20px no-repeat;
   }
   .floating-profile-container {
     position: absolute;

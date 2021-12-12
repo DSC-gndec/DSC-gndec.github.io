@@ -89,11 +89,11 @@ async function handleSubscribe(event) {
         subscribe_local_data.data+=1;
         Update_data("subscribe_form_data",subscribe_local_data.data);
       } else {
-        console.log(response.status);
+        // console.log(response.status);
         snackbar("Oops! Facing some issues<br>Please try again later");
       }
     }).catch(error => {
-      console.log(error);
+      // console.log(error);
       snackbar("Oops! Facing some issues<br>Please try again later");
     });
   }
@@ -207,7 +207,7 @@ var enlargable_elements = document.querySelectorAll('img[data-enlarge-available=
 enlargable_elements.forEach(element => {
   element.addEventListener('click', function(e) {
     try{
-      console.log("here");
+      // console.log("here");
       document.querySelector('#modal-body>img').setAttribute('src', element.getAttribute('src'));
       document.querySelector('#modal-body>img').setAttribute('alt', element.getAttribute('alt'));
       document.querySelector('#modal-body>img').setAttribute('alt', element.getAttribute('alt'));
@@ -290,7 +290,7 @@ function Update_data(main_key,data_value) {
   var object = {data: data_value, expire_date: val.expire_date};
   localStorage.removeItem(main_key);
   localStorage.setItem(main_key, JSON.stringify(object));
-  console.log(JSON.parse(localStorage.getItem(main_key)).data);
+  // console.log(JSON.parse(localStorage.getItem(main_key)).data);
 }
 
 function Delete_data(key) {
