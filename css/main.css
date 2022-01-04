@@ -1301,8 +1301,6 @@ img {
     width: 240px;
     height: 280px;
     border-radius: 10px;
-    -webkit-filter: contrast(110%);
-            filter: contrast(110%);
   }
   .teachers .teachers-body .t-card .t-content .t-back {
     /* background: #03446A; */
@@ -2281,8 +2279,6 @@ img {
     width: 240px;
     height: 270px;
     border-radius: 10px;
-    -webkit-filter: contrast(110%);
-            filter: contrast(110%);
   }
   .teachers .teachers-body .t-card .t-content .t-back {
     /* background: #03446A; */
