@@ -35,6 +35,7 @@ const scrollFunc = () => {
     else { scrollToTopButton.className = "btn btn-dark hide"; }
 };
 window.addEventListener("scroll", scrollFunc);
+
 var pre = document.documentElement.scrollTop || document.body.scrollTop;
 const scrollToTop = () => {
     const c = document.documentElement.scrollTop || document.body.scrollTop;
