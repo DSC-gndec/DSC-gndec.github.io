@@ -3458,6 +3458,7 @@ textarea.input100 {
     width: 100%;
     margin: 0 auto;
     text-align: -webkit-center;
+    text-align: -moz-center;
   }
 
   .dk-footer .contact-us{
@@ -3474,7 +3475,7 @@ textarea.input100 {
   }
 
   .footer-subscribe{
-    padding: 0px;
+    padding: 0px 10px;
     width: 100%;
   }
 
