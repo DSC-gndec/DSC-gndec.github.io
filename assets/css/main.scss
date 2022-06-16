@@ -125,6 +125,25 @@ img{
 }
 
 
+.developer-section.flash{
+  animation: flash 1.5s infinite;
+  border: 3px solid;
+  margin: -3px;
+  border-radius: 10px;
+}
+
+@keyframes flash {
+  0% {
+    border-color: #e95f7b1e;
+  }
+  50% {
+    border-color: #e95f7b86;
+  }
+  100% {
+    border-color: #e95f7b1e;
+  }
+}
+
 
 // .vl {
 //   border-left: 3px solid green;

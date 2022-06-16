@@ -5,7 +5,26 @@ $(document).ready(function (e) {
   $(document).bind("contextmenu",function(e) {
     return false;
   });
+
+  
+  
+  
 });
+
+url_hash = window.location.hash;
+if(url_hash == "#Developers"){
+  window.addEventListener('load', function() {
+    var developer_section = document.querySelector('.developer-section');
+    document.querySelector('#Developers').scrollIntoView({
+      behavior: 'smooth'
+    });
+    developer_section.classList.add('flash');
+    this.setTimeout(function() {
+      developer_section.classList.remove('flash');
+    },10000);
+  });
+}
+
 
 function Fid(idv){if(document.getElementById(idv)===null){throw "Error:\n  Unable to find element with id '"+idv+"'"}else{return document.getElementById(idv);}}
 function Dqs(sv){if(document.querySelector(sv)===null){throw "Error:\n  Unable to select element with selector '"+sv+"'"}else{return document.querySelector(sv);}}

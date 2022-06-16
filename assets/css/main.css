@@ -139,6 +139,38 @@ img {
   background: url("../images/Amanjot.jpg") right/20px no-repeat, url("../images/Priyanka.jpg") left/20px no-repeat;
 }
 
+.developer-section.flash {
+  -webkit-animation: flash 1.5s infinite;
+          animation: flash 1.5s infinite;
+  border: 3px solid;
+  margin: -3px;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    border-color: #e95f7b1e;
+  }
+  50% {
+    border-color: #e95f7b86;
+  }
+  100% {
+    border-color: #e95f7b1e;
+  }
+}
+
+@keyframes flash {
+  0% {
+    border-color: #e95f7b1e;
+  }
+  50% {
+    border-color: #e95f7b86;
+  }
+  100% {
+    border-color: #e95f7b1e;
+  }
+}
+
 @media screen and (min-width: 100px) {
   /* =========================== Header ========================== */
   .nav {
