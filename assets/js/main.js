@@ -19,7 +19,7 @@ $(document).ready(function (e) {
       $('#modal-body>img').attr('src', $(this).attr('src'));
       $('#modal-body>img').attr('alt', $(this).attr('alt'));
       $('#modal-title').html($(this).attr('alt')+" EVENT");
-      $('#ImageModal').modal('show');
+      window.$('#ImageModal').modal('show');
     });
   });
   // ========================= /End-Modal/=================================
