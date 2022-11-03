@@ -7,6 +7,26 @@ $(document).ready(function (e) {
   });
 
   
+  // ========================= /Start-Modal/=================================
+  var enlargable_elements = document.querySelectorAll('img[data-enlarge-available="true"]');
+  enlargable_elements.forEach(element => {
+    element.addEventListener('click', function(e) {
+      try{
+        // console.log("here");
+        document.querySelector('#modal-body>img').setAttribute('src', element.getAttribute('src'));
+        document.querySelector('#modal-body>img').setAttribute('alt', element.getAttribute('alt'));
+        document.querySelector('#modal-body>img').setAttribute('alt', element.getAttribute('alt'));
+        document.querySelector('#modal-title').innerHTML = element.getAttribute('alt')+" EVENT";
+        $('#ImageModal').modal('show');
+      }
+      catch(err){
+        console.log(err);
+      }
+    });
+  });
+  // ========================= /End-Modal/=================================
+
+  
   
   
 });
@@ -222,24 +242,6 @@ catch(err){};
 
 // ========================= /End-Contact-form/=================================
 
-
-
-// ========================= /Start-Modal/=================================
-var enlargable_elements = document.querySelectorAll('img[data-enlarge-available="true"]');
-enlargable_elements.forEach(element => {
-  element.addEventListener('click', function(e) {
-    try{
-      // console.log("here");
-      document.querySelector('#modal-body>img').setAttribute('src', element.getAttribute('src'));
-      document.querySelector('#modal-body>img').setAttribute('alt', element.getAttribute('alt'));
-      document.querySelector('#modal-body>img').setAttribute('alt', element.getAttribute('alt'));
-      document.querySelector('#modal-title').innerHTML = element.getAttribute('alt')+" EVENT";
-      $('#ImageModal').modal('show');
-    }
-    catch(err){}
-  });
-});
-// ========================= /End-Modal/=================================
 
 
 
