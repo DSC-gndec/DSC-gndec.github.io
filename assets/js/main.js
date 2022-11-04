@@ -2,28 +2,6 @@ $(document).ready(function (e) {
   var CurrentYear = new Date().getFullYear();
   document.getElementById('date').innerText = CurrentYear;
 
-  // ========================= /Start-Modal/=================================
-  // var enlargable_elements = document.querySelectorAll('img[data-enlarge-available="true"]');
-  // enlargable_elements.forEach(element => {
-  //   element.addEventListener('click', function(e) {
-  //       // console.log("here");
-  //     document.querySelector('#modal-body>img').setAttribute('src', element.getAttribute('src'));
-  //     document.querySelector('#modal-body>img').setAttribute('alt', element.getAttribute('alt'));
-  //     document.querySelector('#modal-title').innerHTML = element.getAttribute('alt')+" EVENT";
-  //     $('#ImageModal').modal('show');
-  //   });
-  // });
-
-  $('img[data-enlarge-available="true"]').each(function () {
-    $(this).on('click', function () {
-      $('#modal-body>img').attr('src', $(this).attr('src'));
-      $('#modal-body>img').attr('alt', $(this).attr('alt'));
-      $('#modal-title').html($(this).attr('alt')+" EVENT");
-      window.$('#ImageModal').modal('show');
-    });
-  });
-  // ========================= /End-Modal/=================================
-
   $(document).bind("contextmenu",function(e) {
     return false;
   });
@@ -247,6 +225,27 @@ catch(err){};
 
 
 
+// ========================= /Start-Modal/=================================
+var enlargable_elements = document.querySelectorAll('img[data-enlarge-available="true"]');
+enlargable_elements.forEach(element => {
+  element.addEventListener('click', function(e) {
+      // console.log("here");
+    document.querySelector('#modal-body>img').setAttribute('src', element.getAttribute('src'));
+    document.querySelector('#modal-body>img').setAttribute('alt', element.getAttribute('alt'));
+    document.querySelector('#modal-title').innerHTML = element.getAttribute('alt')+" EVENT";
+    $('#ImageModal').modal('show');
+  });
+});
+
+// $('img[data-enlarge-available="true"]').each(function () {
+//   $(this).on('click', function () {
+//     $('#modal-body>img').attr('src', $(this).attr('src'));
+//     $('#modal-body>img').attr('alt', $(this).attr('alt'));
+//     $('#modal-title').html($(this).attr('alt')+" EVENT");
+//     $('#ImageModal').modal('show');
+//   });
+// });
+// ========================= /End-Modal/=================================
 
 
 
