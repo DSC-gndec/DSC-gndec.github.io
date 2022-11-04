@@ -173,6 +173,7 @@ img{
 
   .logo img {
     height: 55px;
+    width: 55.78px;
   }
 
   .left-content {
@@ -501,7 +502,7 @@ img{
 
       & img{
         width: 270px;
-        // height: 200px;
+        height: 200px;
         border-radius: 8px;
         margin-bottom: 8px;
       }
@@ -1454,6 +1455,7 @@ img{
 
   .logo img {
     height: 60px;
+    width: 61.85px;
   }
 
   .left-content {
@@ -1593,7 +1595,7 @@ img{
 
   .overview-section .overview-row img{
     width: 340px;
-    // height: 230px;
+    height: 252px;
     border-radius: 8px;
     margin-bottom: 8px;
   }
@@ -1792,7 +1794,7 @@ img{
 
   .event-section .event-row img{
     width: 320px;
-    height: 210px;
+    height: 213px;
     margin-bottom: 0px;
     border-radius: 0 0 8px 8px;
   }
@@ -2723,6 +2725,17 @@ footer p{
   color: $themeColor;
 }
 
+#show-profile{
+  color: #878787;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#show-profile:hover{
+  color: $themeColor;
+}
+
 .footer-widget #show-profile{
   cursor: pointer;
 }
@@ -2936,6 +2949,10 @@ footer p{
 .footer-logo {
   display: flex;
   justify-content: space-evenly;
+}
+
+.footer-logo a{
+  display: flex;
 }
 
 @media only screen and (max-width: 767px) {
