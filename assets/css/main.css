@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Cookie|Lato|Pacifico|Raleway|Merriweather|Modak|Ultra|Bungee|Rochester|Rokkitt|Encode+Sans:wght@400;500;700;900|Noto+Serif|Fredoka+One|Passion+One:wght@400;700;900|Roboto+Slab:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -561,7 +560,6 @@ img {
   }
   .overview-section .overview-row img {
     width: 270px;
-    height: 200px;
     border-radius: 8px;
     margin-bottom: 8px;
   }
@@ -757,16 +755,15 @@ img {
     margin: 50px 0 0 0;
   }
   .event-section .event-row .event-status {
-    width: 280px;
     border-radius: 8px 8px 0 0;
-    padding: 6px 0px;
-    font-size: 15.5px;
+    padding: 8px 0px;
+    font-size: 14.5px;
     letter-spacing: 0.6px;
     text-transform: uppercase;
-    color: white;
+    color: #6e0b0b;
     text-align: center;
     font-weight: bold;
-    background-color: #f88199;
+    background-color: #f3758f;
     border-bottom: 2px solid #505050;
   }
   .event-section .event-row .event-img-cont {
@@ -776,8 +773,8 @@ img {
     margin-bottom: 8px;
   }
   .event-section .event-row img {
-    width: 280px;
-    height: 200px;
+    width: 288px;
+    height: 192px;
     border-radius: 0 0 8px 8px;
     cursor: pointer;
   }
@@ -807,9 +804,9 @@ img {
     text-align: center;
   }
   .custom-button {
-    background-color: #fbacbcfc;
+    background-color: #fcabbcfc;
     border-radius: 100px;
-    color: #ce2648fc;
+    color: #a00222fa;
     cursor: pointer;
     display: inline-block;
     font-size: 14.5px;
@@ -1569,7 +1566,6 @@ img {
   }
   .overview-section .overview-row img {
     width: 340px;
-    height: 230px;
     border-radius: 8px;
     margin-bottom: 8px;
   }
@@ -1744,16 +1740,15 @@ img {
             flex-direction: row;
   }
   .event-section .event-row .event-status {
-    width: 320px;
     border-radius: 8px 8px 0 0;
-    padding: 6px 0px;
-    font-size: 17px;
+    padding: 8px 0px;
+    font-size: 14.5px;
     letter-spacing: 0.6px;
     text-transform: uppercase;
-    color: white;
+    color: #6e0b0b;
     text-align: center;
     font-weight: bold;
-    background-color: #f88199;
+    background-color: #f3758f;
   }
   .event-section .event-row .event-img-cont {
     border-radius: 8px;

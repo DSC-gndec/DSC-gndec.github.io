@@ -501,7 +501,7 @@ img{
 
       & img{
         width: 270px;
-        height: 200px;
+        // height: 200px;
         border-radius: 8px;
         margin-bottom: 8px;
       }
@@ -761,19 +761,20 @@ img{
   }
 
   .event-section .event-row .event-status{
-    width: 280px;
+    // width: 280px;
     // height: 40px;
     border-radius: 8px 8px 0 0;
-    padding: 6px 0px;
-    font-size: 15.5px;
+    padding: 8px 0px;
+    font-size: 14.5px;
     letter-spacing: 0.6px;
     text-transform: uppercase;
     // margin-bottom: 8px;
-    color: white;
+    // color: white;
+    color: #6e0b0b;
     text-align: center;
     font-weight: bold;
     // background-color: #fc6c89;
-    background-color: #f88199;
+    background-color: #f3758f;
     border-bottom: 2px solid #505050;
   }
 
@@ -784,8 +785,8 @@ img{
   }
 
   .event-section .event-row img{
-    width: 280px;
-    height: 200px;
+    width: 288px;
+    height: 192px;
     border-radius: 0 0 8px 8px;
     cursor: pointer;
   }
@@ -820,9 +821,9 @@ img{
   }
 
   .custom-button {
-    background-color: $themeColor;
+    background-color: #fcabbcfc;
     border-radius: 100px;
-    color: #ce2648fc;
+    color: #a00222fa;
     cursor: pointer;
     display: inline-block;
     font-size: 14.5px;
@@ -1592,7 +1593,7 @@ img{
 
   .overview-section .overview-row img{
     width: 340px;
-    height: 230px;
+    // height: 230px;
     border-radius: 8px;
     margin-bottom: 8px;
   }
@@ -1769,19 +1770,19 @@ img{
   }
 
   .event-section .event-row .event-status{
-    width: 320px;
+    // width: 320px;
     // height: 40px;
     border-radius: 8px 8px 0 0;
-    padding: 6px 0px;
-    font-size: 17px;
+    padding: 8px 0px;
+    font-size: 14.5px;
     letter-spacing: 0.6px;
     text-transform: uppercase;
     // margin-bottom: 8px;
-    color: white;
+    color: #6e0b0b;
     text-align: center;
     font-weight: bold;
     // background-color: #fc6c89;
-    background-color: #f88199;
+    background-color: #f3758f;
   }
 
   .event-section .event-row .event-img-cont{
@@ -3073,8 +3074,6 @@ footer p{
 
   /*//////////////////////////////////////////////////////////////////
   [ RESTYLE TAG ]*/
-
-  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
     margin: 0px; 
