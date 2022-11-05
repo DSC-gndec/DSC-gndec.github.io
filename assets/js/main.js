@@ -6,10 +6,20 @@ $(document).ready(function (e) {
     return false;
   });
 
-  
-  
+  $(".event-img>img").each(function() {
+      $(this).on('error', function(){
+        $(this).hide();
+        $(this).parent().attr('style','display: flex; justify-content: center; align-items: center; background-color: #ffe3e9; font-size: 13px; color: #ae4b65; font-weight: 500; padding-bottom: 20px;');
+        $(this).parent().html('<i class="fa fa-exclamation-circle" style="font-size: 15px;padding-top: 2px;"></i>&nbsp;Image not found');
+        // $(this).parent().html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style >.fa-secondary{opacity:.4}</style></defs><path d="M256 8C119 8 8 119.08 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 376a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm38.24-238.41l-12.8 128A16 16 0 0 1 265.52 288h-19a16 16 0 0 1-15.92-14.41l-12.8-128A16 16 0 0 1 233.68 128h44.64a16 16 0 0 1 15.92 17.59z" class="fa-secondary" /><path d="M278.32 128h-44.64a16 16 0 0 0-15.92 17.59l12.8 128A16 16 0 0 0 246.48 288h19a16 16 0 0 0 15.92-14.41l12.8-128A16 16 0 0 0 278.32 128zM256 320a32 32 0 1 0 32 32 32 32 0 0 0-32-32z" class="fa-primary" /></svg> Image not found');
+      });
+  });
   
 });
+
+
+
+
 
 url_hash = window.location.hash;
 if(url_hash == "#Developers"){
@@ -246,6 +256,24 @@ enlargable_elements.forEach(element => {
 //   });
 // });
 // ========================= /End-Modal/=================================
+
+
+
+
+// ====================== /Handle Image Not Found/=========================
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive' || state == 'complete') {
+    document.querySelectorAll(".event-img>img").forEach(img => {
+      img.addEventListener("error", function () {
+        img.style.display = "none";
+        img.parentElement.setAttribute('style','display: flex; justify-content: center; align-items: center; background-color: #ffe3e9; font-size: 13px; color: #ae4b65; font-weight: 500; padding-bottom: 20px;');
+        img.parentElement.innerHTML = '<i class="fa fa-exclamation-circle" style="font-size: 15px;padding-top: 2px;"></i>&nbsp;Image not found';
+      });
+    });
+  }
+}
+// ====================== /End-Handle Image Not Found/=========================
 
 
 

@@ -774,7 +774,13 @@ img {
             box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
     margin-bottom: 8px;
   }
-  .event-section .event-row img {
+  .event-section .event-row .event-img {
+    width: 288px;
+    height: 192px;
+    border-radius: 0 0 8px 8px;
+    background-color: #ffe3e9;
+  }
+  .event-section .event-row .event-img img {
     width: 288px;
     height: 192px;
     border-radius: 0 0 8px 8px;
@@ -1759,7 +1765,13 @@ img {
     -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.479);
             box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.479);
   }
-  .event-section .event-row img {
+  .event-section .event-row .event-img {
+    width: 320px;
+    height: 213px;
+    border-radius: 0 0 8px 8px;
+    background-color: #ffe3e9;
+  }
+  .event-section .event-row .event-img img {
     width: 320px;
     height: 213px;
     margin-bottom: 0px;
@@ -2002,6 +2014,8 @@ img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    min-width: 171px;
+    min-height: 205px;
   }
   .floating-profile-container .content .image-container img {
     max-width: 205px;
