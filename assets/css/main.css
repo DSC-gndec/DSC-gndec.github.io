@@ -198,7 +198,7 @@ img {
   }
   .logo img {
     height: 55px;
-    width: 55.78px;
+    width: 55px;
   }
   .left-content {
     display: -webkit-inline-box;
@@ -1026,6 +1026,8 @@ img {
   .floating-profile-container .content .image-container img {
     max-width: 200px;
     max-height: 200px;
+    width: 100%;
+    height: 200px;
     border-radius: 10px;
   }
   .floating-profile-container .content .details-container {
@@ -1442,7 +1444,7 @@ img {
   }
   .logo img {
     height: 60px;
-    width: 61.85px;
+    width: 60px;
   }
   .left-content {
     display: -webkit-inline-box;
@@ -2020,6 +2022,8 @@ img {
   .floating-profile-container .content .image-container img {
     max-width: 205px;
     max-height: 205px;
+    width: 100%;
+    height: 205px;
     border-radius: 10px;
   }
   .floating-profile-container .content .details-container {
