@@ -1085,27 +1085,25 @@ img {
     padding-left: 5px;
     margin-bottom: 0px;
   }
-  .floating-profile-container .content .details-container .social-handles .social-icons .fa {
+  .floating-profile-container .content .details-container .social-handles .social-icons .fab, .floating-profile-container .content .details-container .social-handles .social-icons .fa {
     width: 40px;
     height: 40px;
     line-height: 40px;
     font-size: 1.4em;
     text-align: center;
+    border-radius: 50%;
     color: rgba(255, 255, 255, 0.92);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .floating-profile-container .content .details-container .social-handles .social-icons .fa {
-    border-radius: 50%;
-  }
-  .floating-profile-container .content .details-container .social-handles .social-icons .fa:hover, .floating-profile-container .content .details-container .social-handles .social-icons .fa:active {
+  .floating-profile-container .content .details-container .social-handles .social-icons .fab:hover, .floating-profile-container .content .details-container .social-handles .social-icons .fab:active, .floating-profile-container .content .details-container .social-handles .social-icons .fa:hover, .floating-profile-container .content .details-container .social-handles .social-icons .fa:active {
     color: white;
     -webkit-box-shadow: 1px 1px 3px #333;
     box-shadow: 1px 1px 3px #333;
     -webkit-transform: scale(1.12) rotate(360deg);
     transform: scale(1.12) rotate(360deg);
   }
-  .floating-profile-container .content .details-container .social-handles .social-icons .fa-facebook, .floating-profile-container .content .details-container .social-handles .social-icons .fa-facebook-square {
+  .floating-profile-container .content .details-container .social-handles .social-icons .fa-facebook-f, .floating-profile-container .content .details-container .social-handles .social-icons .fa-facebook-square {
     background-color: #3b5998;
   }
   .floating-profile-container .content .details-container .social-handles .social-icons .fa-twitter {
@@ -1117,7 +1115,7 @@ img {
   .floating-profile-container .content .details-container .social-handles .social-icons .fa-envelope {
     background-color: #dd3427;
   }
-  .floating-profile-container .content .details-container .social-handles .social-icons .fa-linkedin {
+  .floating-profile-container .content .details-container .social-handles .social-icons .fa-linkedin-in {
     background-color: #0976b4;
   }
   .floating-profile-container .content .details-container .social-handles .social-icons .fa-github {
@@ -1382,7 +1380,7 @@ img {
     color: #e95b48;
     font-size: 16px;
   }
-  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-linkedin {
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-linkedin-in {
     color: #0976b4;
   }
   .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-github {
@@ -2113,7 +2111,7 @@ img {
   .floating-profile-container .content .details-container .social-handles .social-icons .fa-envelope {
     background-color: #dd3427;
   }
-  .floating-profile-container .content .details-container .social-handles .social-icons .fa-linkedin {
+  .floating-profile-container .content .details-container .social-handles .social-icons .fa-linkedin-in {
     background-color: #0976b4;
   }
   .floating-profile-container .content .details-container .social-handles .social-icons .fa-github {
@@ -2363,7 +2361,7 @@ img {
     color: #e95b48;
     font-size: 16px;
   }
-  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-linkedin {
+  .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-linkedin-in {
     color: #0976b4;
   }
   .teachers .teachers-body .t-card .t-content .t-back .teacher-info ul .fa-github {
@@ -2641,8 +2639,9 @@ footer p {
   background-color: #dd4b39;
 }
 
-.dk-footer-box-info .footer-social-link a i.fa-linkedin {
-  font-size: 17.5px;
+.dk-footer-box-info .footer-social-link a i.fa-linkedin-in {
+  font-size: 17px;
+  font-weight: 500;
   background-color: #0976b4;
 }
 
@@ -2660,7 +2659,7 @@ footer p {
   background-color: #25D366;
 }
 
-.dk-footer-box-info .footer-social-link a i.fa-youtube-play {
+.dk-footer-box-info .footer-social-link a i.fa-youtube {
   font-size: 18.5px;
   background-color: #e00101;
 }
