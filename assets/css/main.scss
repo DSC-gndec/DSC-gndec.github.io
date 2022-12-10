@@ -4,8 +4,11 @@
 // $themeColor: #a1ee6e;
 // $darkThemeColor: #49bb2a;
 
-$lightThemeColor: #ffaebeb0;
-$themeColor: #fbacbcfc;
+// $lightThemeColor: #ffaebeb0;
+// $themeColor: #fbacbcfc;
+// $darkThemeColor: #ec617dfc;
+$lightThemeColor: #ffa4b6bf;
+$themeColor: #fba4b6fc;
 $darkThemeColor: #ec617dfc;
 
 * {
@@ -35,32 +38,35 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 7px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 4.5px rgb(167, 167, 167);
-  border-radius: 2px;
+  // box-shadow: inset 0 0 4.5px rgb(167, 167, 167);
+  border-radius: 50px;
+  background-color: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset -0.4px 0px 3px 1.3px rgba(226,226,226,1);
-  -moz-box-shadow: inset -0.4px 0px 3px 1.3px rgba(226,226,226,1);
-  box-shadow: inset -0.4px 0px 3px 1.3px rgba(226,226,226,1);
+  box-shadow: inset -0.7px 0px 0px 0.4px rgb(255, 255, 255);
+  // border: 1.5px solid white;
   // -webkit-box-shadow: inset 0px 0px 0px 2px rgb(248, 244, 244);
   // -webkit-box-shadow: inset -2px 0px 0px 1px rgb(248, 244, 244);
   // -moz-box-shadow: inset -2px 0px 0px 1px rgb(248, 244, 244);
   // box-shadow: inset -2px 0px 0px 1px rgb(248, 244, 244);
-  background: #594374fc;
+  background: #99006bfc;
   // background: #f7734b;
-  border-radius: 10px;
+  border-radius: 100px !important;
+  transition: all 0.3s ease;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #3d2e50fc;
+  box-shadow: inset -0.7px 0px 0px 0.4px rgb(255, 255, 255);
+  // border: 0px solid white;
+  background: #86005efc;
 }
 
 ::selection {
@@ -191,7 +197,7 @@ img{
 
   .left-content .title .sub-heading {
     display: inline-flex;
-    font-size: 13px;
+    font-size: 14.5px;
     font-weight: 500;
     border-left: 2.3px solid #58028a;
     color: #58028a;
@@ -270,13 +276,17 @@ img{
     // 64%  { transform: scale(1,1)      translateY(0); }
     // 100% { transform: scale(1,1)      translateY(0px); }
 
-    0% {transform: scale(1, 1) translateY(-300%);}
-    10% {transform: scale(1, 1) translateY(-260px);}
-    70% {transform: scale(1, 1) translateY(-10px);}
-    80% {transform: scale(1, 1) translateY(0);}
-    87% {transform: scale(1, 1) translateY(-10px);}
-    94% {transform: scale(1, 1) translateY(0);}
-    100% {transform: scale(1, 1) translateY(0px);}
+    // 0% {transform: scale(1, 1) translateY(-300%);}
+    // 10% {transform: scale(1, 1) translateY(-260px);}
+    // 70% {transform: scale(1, 1) translateY(-10px);}
+    // 80% {transform: scale(1, 1) translateY(0);}
+    // 87% {transform: scale(1, 1) translateY(-10px);}
+    // 94% {transform: scale(1, 1) translateY(0);}
+    // 100% {transform: scale(1, 1) translateY(0px);}
+    0% {transform: scale(1, 1) translateY(-800px);}
+    50% {transform: scale(1, 1) translateY(5px);}
+    70% {transform: scale(1, 1) translateY(-1px);}
+    90%,100% {transform: scale(1, 1) translateY(0px);}
   }
 
   .nav-close {
@@ -383,14 +393,14 @@ img{
 
     & .main-heading{
       color: #fce6eafc;
-      font-size: 25px;
+      font-size: 26px;
       font-family: Merriweather;
       font-weight: bold;
     }
 
     & .sub-heading p{
       margin-top: 8px;
-      font-size: 15px;
+      font-size: 17px;
       color: #fff;
       font-family: Raleway;
     }
@@ -520,7 +530,7 @@ img{
       }
 
       & p{
-        font-size: 16px;
+        font-size: 17px;
         padding: 10px 10px 10px 16px;
         letter-spacing: 0.7px;
         color: #000000;
@@ -545,7 +555,7 @@ img{
     & .card{
       max-width: 300px;
       margin: 12px;
-      padding: 10px;
+      padding: 19px 15px;
       display: inline-flex;
       border-radius: 12px;
       cursor: pointer;
@@ -562,15 +572,15 @@ img{
 
     & .card-title{
       font-family: Merriweather;
+      font-weight: 600;
       font-size: 16.5px;
       text-align: center;
-      // font-weight: bold;
-      color: #000000;
+      color: #2b2b2be6;
     }
 
     & .card-body{
       text-align: justify;
-      font-size: 14.5px;
+      font-size: 15.5px;
       padding: 0 15px 10px 15px;
       font-family: 'Nunito', sans-serif;
     }
@@ -592,6 +602,7 @@ img{
     }
 
     & .join-us-body p{
+      font-size: 17px;
       padding: 0 15px;
       color: #000;
     }
@@ -814,7 +825,7 @@ img{
   }
 
   .event-section .event-row p{
-    font-size: 15px;
+    font-size: 16px;
     padding: 15px 10px 20px 5px;
     color: #000000;
   }
@@ -834,7 +845,7 @@ img{
     color: #a00222fa;
     cursor: pointer;
     display: inline-block;
-    font-size: 14.5px;
+    font-size: 15.5px;
     font-weight: 600;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
     text-align: center;
@@ -1704,10 +1715,11 @@ img{
 
     & .card-title{
       font-family: Merriweather;
-      font-size: 18px;
+      font-size: 17.5px;
       text-align: center;
       // font-weight: bold;
-      color: #000000;
+      // color: #000000;
+      color: #2e2e2eda;
     }
 
     & .card-body{
